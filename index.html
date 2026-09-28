@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>KAMOD Tutorials — learn AI video in 16 short lessons</title>
+  <meta name="description" content="Free KAMOD video lessons in English, Russian and Uzbek: AI Director, Film Studio, AI Images, UGC ads, voice, music and the KAMOD Editor.">
+  <meta property="og:title" content="KAMOD Tutorials">
+  <meta property="og:description" content="16 short lessons in English, Russian and Uzbek — watch, download and check what you learned.">
+  <meta property="og:image" content="en/lesson-01.jpg">
+  <meta name="theme-color" content="#0A0A0F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; min-height: 100vh; font-family: Inter, system-ui, sans-serif; color: #f4f4f6;
+      background: radial-gradient(ellipse at 75% -10%, rgba(255,107,53,.16), transparent 50%),
+                  radial-gradient(ellipse at 0% 100%, rgba(255,107,53,.06), transparent 45%), #0A0A0F; }
+    header { max-width: 1280px; margin: 0 auto; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 800; letter-spacing: .08em; color: #FF6B35; text-decoration: none; font-size: 18px; }
+    .brand span { color: #f4f4f6; font-weight: 500; letter-spacing: 0; margin-left: 6px; opacity: .7; }
+    .cta { text-decoration: none; color: #111; background: linear-gradient(135deg,#FF6B35,#ff8a5c); padding: 11px 18px; border-radius: 12px; font-weight: 700; font-size: 14px; box-shadow: 0 8px 24px rgba(255,107,53,.35); }
+    main { max-width: 1280px; margin: 0 auto; padding: 24px 28px 64px; }
+    footer { max-width: 1280px; margin: 0 auto; padding: 0 28px 40px; color: rgba(244,244,246,.45); font-size: 13px; }
+    footer a { color: rgba(244,244,246,.7); }
+    @media (max-width: 600px) { header, main, footer { padding-left: 16px; padding-right: 16px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://kamod.io">KAMOD<span>Tutorials</span></a>
+    <a class="cta" id="cta" href="https://kamod.io">Open KAMOD →</a>
+  </header>
+  <main><div id="tutorials"></div></main>
+  <footer>© KAMOD · <a href="https://kamod.io">kamod.io</a></footer>
+  <script src="tutorials.js"></script>
+  <script>
+    (function () {
+      var q = new URLSearchParams(location.search).get("lang");
+      var nav = (navigator.language || "en").slice(0, 2);
+      var lang = ["en", "ru", "uz"].indexOf(q) >= 0 ? q : (["ru", "uz"].indexOf(nav) >= 0 ? nav : "");
+      document.documentElement.lang = lang || "en";
+      document.getElementById("cta").textContent = { ru: "Открыть KAMOD →", uz: "KAMODni ochish →" }[lang] || "Open KAMOD →";
+      KamodTutorials.mount(document.getElementById("tutorials"), { base: "./", tryBase: "https://kamod.io", lang: lang || undefined });
+    })();
+  </script>
+</body>
+</html>

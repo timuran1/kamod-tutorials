@@ -1,0 +1,776 @@
+{
+ "version": 1,
+ "lessons": [
+  {
+   "n": 1,
+   "try": "/",
+   "langs": {
+    "en": {
+     "title": "Start here — your first AI video in KAMOD",
+     "brief": "New to KAMOD? This 90-second tour shows the workspace and takes you from idea to your first finished AI video.",
+     "learn": [
+      "Find your way around the workspace",
+      "Switch the interface to English, Russian or Uzbek",
+      "Understand tokens and see the price before you generate",
+      "Create your first video and find it in your Library"
+     ],
+     "video": "en/lesson-01.mp4",
+     "poster": "en/lesson-01.jpg",
+     "seconds": 94,
+     "bytes": 7178396
+    },
+    "ru": {
+     "title": "С чего начать — ваше первое ИИ-видео в KAMOD",
+     "brief": "Впервые в KAMOD? За 90 секунд покажем рабочее пространство и пройдём путь от идеи до первого готового ИИ-видео.",
+     "learn": [
+      "Как устроено рабочее пространство",
+      "Как переключить язык: русский, узбекский или английский",
+      "Что такое токены и где видна цена до запуска",
+      "Как создать первое видео и найти его в Библиотеке"
+     ],
+     "video": "ru/lesson-01.mp4",
+     "poster": "ru/lesson-01.jpg",
+     "seconds": 94,
+     "bytes": 7531727
+    },
+    "uz": {
+     "title": "Shu yerdan boshlang — KAMODda birinchi AI videongiz",
+     "brief": "KAMODda yangimisiz? 90 soniyada ish maydonini ko‘rsatamiz va g‘oyadan birinchi tayyor AI videogacha boramiz.",
+     "learn": [
+      "Ish maydoni qanday tuzilgan",
+      "Tilni o‘zgartirish: o‘zbek, rus yoki ingliz",
+      "Tokenlar nima va narx oldindan qayerda ko‘rinadi",
+      "Birinchi videoni yaratish va uni Kutubxonadan topish"
+     ],
+     "video": "uz/lesson-01.mp4",
+     "poster": "uz/lesson-01.jpg",
+     "seconds": 94,
+     "bytes": 7397003
+    }
+   }
+  },
+  {
+   "n": 2,
+   "try": "/ai-director",
+   "langs": {
+    "en": {
+     "title": "AI Director — turn one idea into a shot-by-shot plan",
+     "brief": "Describe your scene in a sentence and AI Director writes the script, plans every shot and generates the first frames for you.",
+     "learn": [
+      "Write a scene idea in any language",
+      "Get a shot list with editable image prompts",
+      "Choose Nano Banana Pro or GPT Image for the frames",
+      "Generate the first frame and send the plan on to video"
+     ],
+     "video": "en/lesson-02.mp4",
+     "poster": "en/lesson-02.jpg",
+     "seconds": 96,
+     "bytes": 8013085
+    },
+    "ru": {
+     "title": "AI-режиссёр — из одной идеи в покадровый план",
+     "brief": "Опишите сцену одним предложением — AI-режиссёр напишет сценарий, распланирует каждый кадр и создаст первые кадры.",
+     "learn": [
+      "Как описать идею сцены на любом языке",
+      "Как получить список кадров с редактируемыми промптами",
+      "Выбор Nano Banana Pro или GPT Image для кадров",
+      "Как создать первый кадр и перейти к видео"
+     ],
+     "video": "ru/lesson-02.mp4",
+     "poster": "ru/lesson-02.jpg",
+     "seconds": 96,
+     "bytes": 8421791
+    },
+    "uz": {
+     "title": "AI rejissyor — bitta g‘oyadan kadrma-kadr rejagacha",
+     "brief": "Sahnani bitta jumlada tasvirlang — AI rejissyor ssenariy yozadi, har bir kadrni rejalaydi va birinchi kadrlarni yaratadi.",
+     "learn": [
+      "Sahna g‘oyasini istalgan tilda yozish",
+      "Tahrirlanadigan promptli kadrlar ro‘yxatini olish",
+      "Kadrlar uchun Nano Banana Pro yoki GPT Image tanlash",
+      "Birinchi kadrni yaratib, rejani videoga o‘tkazish"
+     ],
+     "video": "uz/lesson-02.mp4",
+     "poster": "uz/lesson-02.jpg",
+     "seconds": 96,
+     "bytes": 8380649
+    }
+   }
+  },
+  {
+   "n": 3,
+   "try": "/film-studio",
+   "langs": {
+    "en": {
+     "title": "AI Film Studio — text and images to cinematic video",
+     "brief": "Bring your frames to life. AI Film Studio turns a prompt or a still image into a cinematic shot with real camera motion.",
+     "learn": [
+      "Text-to-video and image-to-video with Seedance",
+      "Write prompts that control action and camera",
+      "Set duration, aspect ratio and quality",
+      "Track progress and reopen results from history"
+     ],
+     "video": "en/lesson-03.mp4",
+     "poster": "en/lesson-03.jpg",
+     "seconds": 94,
+     "bytes": 6966438
+    },
+    "ru": {
+     "title": "AI Film Studio — из текста и изображений в кинематографичное видео",
+     "brief": "Оживите свои кадры. AI Film Studio превращает промпт или картинку в кинематографичную сцену с настоящим движением камеры.",
+     "learn": [
+      "Текст в видео и изображение в видео с Seedance",
+      "Промпты, которые управляют действием и камерой",
+      "Длительность, соотношение сторон и качество",
+      "Как следить за генерацией и открывать результаты из истории"
+     ],
+     "video": "ru/lesson-03.mp4",
+     "poster": "ru/lesson-03.jpg",
+     "seconds": 94,
+     "bytes": 7098912
+    },
+    "uz": {
+     "title": "AI Film Studio — matn va rasmlardan kinematografik video",
+     "brief": "Kadrlaringizni jonlantiring. AI Film Studio prompt yoki rasmni haqiqiy kamera harakati bilan kinematografik sahnaga aylantiradi.",
+     "learn": [
+      "Seedance bilan matndan va rasmdan video",
+      "Harakat va kamerani boshqaradigan promptlar",
+      "Davomiylik, tomonlar nisbati va sifat",
+      "Jarayonni kuzatish va natijalarni tarixdan ochish"
+     ],
+     "video": "uz/lesson-03.mp4",
+     "poster": "uz/lesson-03.jpg",
+     "seconds": 94,
+     "bytes": 6897668
+    }
+   }
+  },
+  {
+   "n": 4,
+   "try": "/film-studio",
+   "langs": {
+    "en": {
+     "title": "First & last frame + Combiner — control every transition",
+     "brief": "Choose where a shot starts and where it ends — KAMOD animates everything in between. Then join your clips into one film.",
+     "learn": [
+      "Upload a first and a last frame",
+      "Describe the motion between them with Seedance 2.5",
+      "Get smooth, planned transitions instead of random ones",
+      "Combine several clips into a single video"
+     ],
+     "video": "en/lesson-04.mp4",
+     "poster": "en/lesson-04.jpg",
+     "seconds": 104,
+     "bytes": 8624325
+    },
+    "ru": {
+     "title": "Первый и последний кадр + Комбайнер — полный контроль переходов",
+     "brief": "Задайте, с чего кадр начинается и чем заканчивается, — KAMOD анимирует всё между ними. А потом соедините клипы в один фильм.",
+     "learn": [
+      "Как загрузить первый и последний кадр",
+      "Как описать движение между ними в Seedance 2.5",
+      "Плавные запланированные переходы вместо случайных",
+      "Как объединить несколько клипов в одно видео"
+     ],
+     "video": "ru/lesson-04.mp4",
+     "poster": "ru/lesson-04.jpg",
+     "seconds": 104,
+     "bytes": 9003651
+    },
+    "uz": {
+     "title": "Birinchi va oxirgi kadr + Combiner — o‘tishlarni to‘liq boshqaring",
+     "brief": "Kadr qayerdan boshlanib, qayerda tugashini belgilang — KAMOD oradagi hamma narsani jonlantiradi. Keyin kliplarni bitta filmga birlashtiring.",
+     "learn": [
+      "Birinchi va oxirgi kadrni yuklash",
+      "Seedance 2.5 da ular orasidagi harakatni tasvirlash",
+      "Tasodifiy emas, rejalangan silliq o‘tishlar",
+      "Bir nechta klipni bitta videoga birlashtirish"
+     ],
+     "video": "uz/lesson-04.mp4",
+     "poster": "uz/lesson-04.jpg",
+     "seconds": 104,
+     "bytes": 8845827
+    }
+   }
+  },
+  {
+   "n": 5,
+   "try": "/ai-videos#omni-edit-native",
+   "langs": {
+    "en": {
+     "title": "Omni Edit — restyle or fix a video with one sentence",
+     "brief": "Upload a finished clip and tell KAMOD what to change. Omni Edit restyles it, swaps details or cleans it up while keeping the motion.",
+     "learn": [
+      "Upload a source video",
+      "Write an editing instruction in plain words",
+      "See the exact price based on the clip length",
+      "Turn a live-action shot into a hand-painted watercolor"
+     ],
+     "video": "en/lesson-05.mp4",
+     "poster": "en/lesson-05.jpg",
+     "seconds": 95,
+     "bytes": 7437302
+    },
+    "ru": {
+     "title": "Omni Edit — измените стиль или детали видео одной фразой",
+     "brief": "Загрузите готовый клип и напишите, что изменить. Omni Edit меняет стиль, заменяет детали или чистит кадр, сохраняя движение.",
+     "learn": [
+      "Как загрузить исходное видео",
+      "Как написать инструкцию простыми словами",
+      "Точная цена по длительности клипа",
+      "Как превратить живую съёмку в акварельный рисунок"
+     ],
+     "video": "ru/lesson-05.mp4",
+     "poster": "ru/lesson-05.jpg",
+     "seconds": 95,
+     "bytes": 7420402
+    },
+    "uz": {
+     "title": "Omni Edit — videoning uslubi yoki detallarini bitta jumla bilan o‘zgartiring",
+     "brief": "Tayyor klipni yuklang va nimani o‘zgartirishni yozing. Omni Edit harakatni saqlagan holda uslubni o‘zgartiradi, detallarni almashtiradi yoki kadrni tozalaydi.",
+     "learn": [
+      "Asl videoni yuklash",
+      "Tahrir ko‘rsatmasini oddiy so‘zlar bilan yozish",
+      "Klip davomiyligiga qarab aniq narx",
+      "Jonli suratni akvarel rasmga aylantirish"
+     ],
+     "video": "uz/lesson-05.mp4",
+     "poster": "uz/lesson-05.jpg",
+     "seconds": 95,
+     "bytes": 7291266
+    }
+   }
+  },
+  {
+   "n": 6,
+   "try": "/images",
+   "langs": {
+    "en": {
+     "title": "AI Images — create and edit pictures for your film",
+     "brief": "Generate frames, backgrounds and product shots in seconds, then edit them with words — all in one image workspace.",
+     "learn": [
+      "Pick the right image model for the job",
+      "Write a prompt for a cinematic still",
+      "Edit an existing image: change time of day, details, mood",
+      "Reuse your images as frames for video"
+     ],
+     "video": "en/lesson-06.mp4",
+     "poster": "en/lesson-06.jpg",
+     "seconds": 92,
+     "bytes": 6880887
+    },
+    "ru": {
+     "title": "AI Images — создавайте и редактируйте изображения для фильма",
+     "brief": "Создавайте кадры, фоны и предметные снимки за секунды, а потом редактируйте их словами — всё в одном месте.",
+     "learn": [
+      "Как выбрать модель изображения под задачу",
+      "Промпт для кинематографичного кадра",
+      "Редактирование: время суток, детали, настроение",
+      "Как использовать картинки как кадры для видео"
+     ],
+     "video": "ru/lesson-06.mp4",
+     "poster": "ru/lesson-06.jpg",
+     "seconds": 92,
+     "bytes": 7292176
+    },
+    "uz": {
+     "title": "AI Images — film uchun rasmlarni yarating va tahrirlang",
+     "brief": "Kadrlar, fonlar va mahsulot suratlarini soniyalarda yarating, so‘ng ularni so‘zlar bilan tahrirlang — hammasi bir joyda.",
+     "learn": [
+      "Vazifaga mos rasm modelini tanlash",
+      "Kinematografik kadr uchun prompt",
+      "Tahrirlash: kun vaqti, detallar, kayfiyat",
+      "Rasmlarni video kadrlari sifatida ishlatish"
+     ],
+     "video": "uz/lesson-06.mp4",
+     "poster": "uz/lesson-06.jpg",
+     "seconds": 92,
+     "bytes": 7044169
+    }
+   }
+  },
+  {
+   "n": 7,
+   "try": "/storyboard",
+   "langs": {
+    "en": {
+     "title": "Reference boards — keep your character and location consistent",
+     "brief": "The secret to AI films that look like one story: build a character board and a location board once, then reuse them in every shot.",
+     "learn": [
+      "Choose a board type: character, location, object and more",
+      "Create a character board from one reference photo",
+      "Build a location board for your setting",
+      "Use boards so faces and places stay the same"
+     ],
+     "video": "en/lesson-07.mp4",
+     "poster": "en/lesson-07.jpg",
+     "seconds": 86,
+     "bytes": 9235360
+    },
+    "ru": {
+     "title": "Референс-доски — герой и локация одинаковые в каждом кадре",
+     "brief": "Секрет ИИ-фильмов, которые выглядят как одна история: создайте доску персонажа и доску локации один раз и используйте их в каждом кадре.",
+     "learn": [
+      "Типы досок: персонаж, локация, предмет и другие",
+      "Доска персонажа из одного фото",
+      "Доска локации для места действия",
+      "Как сохранить одинаковые лица и места"
+     ],
+     "video": "ru/lesson-07.mp4",
+     "poster": "ru/lesson-07.jpg",
+     "seconds": 86,
+     "bytes": 9623341
+    },
+    "uz": {
+     "title": "Namuna doskalari — qahramon va joy har bir kadrda bir xil",
+     "brief": "Bitta hikoyadek ko‘rinadigan AI filmlar siri: qahramon va joy doskasini bir marta yarating va har bir kadrda ishlating.",
+     "learn": [
+      "Doska turlari: qahramon, joy, buyum va boshqalar",
+      "Bitta fotodan qahramon doskasi",
+      "Voqea joyi uchun joy doskasi",
+      "Yuz va joylarni bir xil saqlash"
+     ],
+     "video": "uz/lesson-07.mp4",
+     "poster": "uz/lesson-07.jpg",
+     "seconds": 86,
+     "bytes": 9470716
+    }
+   }
+  },
+  {
+   "n": 8,
+   "try": "/images",
+   "langs": {
+    "en": {
+     "title": "Logo & branding — from a logo to brand mockups in minutes",
+     "brief": "Design a logo with perfectly spelled lettering, then place it on cups, signs and packaging — a complete brand start without a design studio.",
+     "learn": [
+      "Why GPT Image 2.5 is the model for logos and text",
+      "Describe brand, icon, colors and style",
+      "Turn your logo into a realistic product mockup",
+      "Logo + mockup for about 36 tokens"
+     ],
+     "video": "en/lesson-08.mp4",
+     "poster": "en/lesson-08.jpg",
+     "seconds": 84,
+     "bytes": 5859467
+    },
+    "ru": {
+     "title": "Логотип и брендинг — от логотипа до мокапов за минуты",
+     "brief": "Создайте логотип с безошибочной надписью и разместите его на стаканах, вывесках и упаковке — старт бренда без дизайн-студии.",
+     "learn": [
+      "Почему GPT Image 2.5 — лучшая модель для логотипов и текста",
+      "Как описать бренд, иконку, цвета и стиль",
+      "Как превратить логотип в реалистичный мокап",
+      "Логотип + мокап примерно за 36 токенов"
+     ],
+     "video": "ru/lesson-08.mp4",
+     "poster": "ru/lesson-08.jpg",
+     "seconds": 84,
+     "bytes": 6120993
+    },
+    "uz": {
+     "title": "Logo va brending — logotipdan brend mokaplarigacha daqiqalarda",
+     "brief": "Yozuvi xatosiz logotip yarating va uni stakan, peshtaxta va qadoqqa joylashtiring — dizayn studiyasiz brend boshlanishi.",
+     "learn": [
+      "Nega GPT Image 2.5 logotip va matn uchun eng yaxshi model",
+      "Brend, belgi, ranglar va uslubni tasvirlash",
+      "Logotipni real mahsulot mokapiga aylantirish",
+      "Logotip + mokap taxminan 36 token"
+     ],
+     "video": "uz/lesson-08.mp4",
+     "poster": "uz/lesson-08.jpg",
+     "seconds": 84,
+     "bytes": 5872082
+    }
+   }
+  },
+  {
+   "n": 9,
+   "try": "/ugc-studio",
+   "langs": {
+    "en": {
+     "title": "UGC & product ads — a creator who talks about your product",
+     "brief": "Upload a product photo and a creator photo, describe the ad — KAMOD writes three concepts and renders a talking reel with natural speech, even in Uzbek.",
+     "learn": [
+      "Choose Gemini Omni for spoken ads",
+      "Add the product, the creator and your idea",
+      "Get three ready-to-render ad concepts",
+      "Render a 9:16 reel with voice and lip-sync"
+     ],
+     "video": "en/lesson-09.mp4",
+     "poster": "en/lesson-09.jpg",
+     "seconds": 96,
+     "bytes": 8048977
+    },
+    "ru": {
+     "title": "UGC и реклама товаров — блогер, который рассказывает о вашем товаре",
+     "brief": "Загрузите фото товара и автора, опишите рекламу — KAMOD напишет три концепции и создаст ролик с живой речью, даже на узбекском.",
+     "learn": [
+      "Почему Gemini Omni — для рекламы с речью",
+      "Как добавить товар, автора и идею",
+      "Три готовые концепции рекламы",
+      "Вертикальный ролик 9:16 с голосом и синхроном губ"
+     ],
+     "video": "ru/lesson-09.mp4",
+     "poster": "ru/lesson-09.jpg",
+     "seconds": 96,
+     "bytes": 8315168
+    },
+    "uz": {
+     "title": "UGC va mahsulot reklamasi — mahsulotingiz haqida gapiradigan bloger",
+     "brief": "Mahsulot va muallif rasmini yuklang, reklamani tasvirlang — KAMOD uchta konsepsiya yozadi va tabiiy nutqli rolik yaratadi, o‘zbek tilida ham.",
+     "learn": [
+      "Nutqli reklama uchun Gemini Omni",
+      "Mahsulot, muallif va g‘oyani qo‘shish",
+      "Uchta tayyor reklama konsepsiyasi",
+      "Ovoz va lab sinxroni bilan 9:16 rolik"
+     ],
+     "video": "uz/lesson-09.mp4",
+     "poster": "uz/lesson-09.jpg",
+     "seconds": 96,
+     "bytes": 8107377
+    }
+   }
+  },
+  {
+   "n": 10,
+   "try": "/audio",
+   "langs": {
+    "en": {
+     "title": "Voice & music — soundtracks, voice-overs and sound effects",
+     "brief": "Everything your video needs to be heard: original music, natural voice-overs in any language and sound effects — in one Audio Workspace.",
+     "learn": [
+      "Generate a full music track with Lyria 3 Pro",
+      "Pick from 30 voices and record a voice-over",
+      "Create a sound effect from a text description",
+      "Where to find lip-sync, voice clone and dubbing"
+     ],
+     "video": "en/lesson-10.mp4",
+     "poster": "en/lesson-10.jpg",
+     "seconds": 90,
+     "bytes": 5246300
+    },
+    "ru": {
+     "title": "Голос и музыка — саундтреки, озвучка и звуковые эффекты",
+     "brief": "Всё, чтобы ваше видео звучало: оригинальная музыка, естественная озвучка на любом языке и звуковые эффекты — в одной Аудио-студии.",
+     "learn": [
+      "Полный музыкальный трек с Lyria 3 Pro",
+      "30 голосов и запись озвучки",
+      "Звуковой эффект по текстовому описанию",
+      "Где найти синхрон губ, клон голоса и дубляж"
+     ],
+     "video": "ru/lesson-10.mp4",
+     "poster": "ru/lesson-10.jpg",
+     "seconds": 90,
+     "bytes": 5643823
+    },
+    "uz": {
+     "title": "Ovoz va musiqa — saundtrek, ovozlashtirish va ovoz effektlari",
+     "brief": "Videongiz eshitilishi uchun hammasi: original musiqa, istalgan tilda tabiiy ovozlashtirish va ovoz effektlari — bitta Audio ish maydonida.",
+     "learn": [
+      "Lyria 3 Pro bilan to‘liq musiqa treki",
+      "30 ta ovoz va ovozlashtirish",
+      "Matndan ovoz effekti yaratish",
+      "Lab sinxroni, ovoz kloni va dublyaj qayerda"
+     ],
+     "video": "uz/lesson-10.mp4",
+     "poster": "uz/lesson-10.jpg",
+     "seconds": 90,
+     "bytes": 5612747
+    }
+   }
+  },
+  {
+   "n": 11,
+   "try": "/ai-videos",
+   "langs": {
+    "en": {
+     "title": "Translate & reframe — one video for every language and screen",
+     "brief": "Translate a finished video into a new language with the same voice and synced lips, reframe 16:9 into vertical, and let AI analyze your clip.",
+     "learn": [
+      "Video Translate: new language, same voice, lip-sync",
+      "See the exact price before translating",
+      "Auto Crop 16:9 → 9:16 for Reels, Shorts and TikTok",
+      "AI Content Analysis: ad hooks, captions and SEO in EN / RU / UZ"
+     ],
+     "video": "en/lesson-11.mp4",
+     "poster": "en/lesson-11.jpg",
+     "seconds": 96,
+     "bytes": 7994861
+    },
+    "ru": {
+     "title": "Перевод и рефрейм — одно видео для всех языков и экранов",
+     "brief": "Переведите готовое видео на другой язык тем же голосом и с синхроном губ, сделайте из 16:9 вертикаль и получите ИИ-анализ ролика.",
+     "learn": [
+      "Перевод видео: новый язык, тот же голос, синхрон губ",
+      "Точная цена до запуска перевода",
+      "Автокроп 16:9 → 9:16 для Reels, Shorts и TikTok",
+      "ИИ-анализ: рекламные хуки, подписи и SEO на RU / UZ / EN"
+     ],
+     "video": "ru/lesson-11.mp4",
+     "poster": "ru/lesson-11.jpg",
+     "seconds": 96,
+     "bytes": 8187401
+    },
+    "uz": {
+     "title": "Tarjima va reframe — bitta video barcha tillar va ekranlar uchun",
+     "brief": "Tayyor videoni o‘sha ovoz va sinxron lablar bilan boshqa tilga tarjima qiling, 16:9 ni vertikalga aylantiring va AI tahlilini oling.",
+     "learn": [
+      "Video tarjima: yangi til, o‘sha ovoz, lab sinxroni",
+      "Tarjimadan oldin aniq narx",
+      "Reels, Shorts va TikTok uchun 16:9 → 9:16 avto kesish",
+      "AI tahlil: reklama hook’lari, izohlar va SEO — UZ / RU / EN"
+     ],
+     "video": "uz/lesson-11.mp4",
+     "poster": "uz/lesson-11.jpg",
+     "seconds": 96,
+     "bytes": 8122591
+    }
+   }
+  },
+  {
+   "n": 12,
+   "try": "/editor",
+   "langs": {
+    "en": {
+     "title": "KAMOD Editor — edit your AI clips into one film in the browser",
+     "brief": "A full video editor right in your browser: import your generations, build the timeline, add titles, use AI tools and export up to 4K.",
+     "learn": [
+      "Pick a format: 16:9, 9:16 or 3:4",
+      "Import clips and music, add them to the timeline",
+      "Add a title in any language",
+      "AI tools: text to speech, auto captions (Uzbek too), music",
+      "Export MP4 up to 4K"
+     ],
+     "video": "en/lesson-12.mp4",
+     "poster": "en/lesson-12.jpg",
+     "seconds": 90,
+     "bytes": 5787739
+    },
+    "ru": {
+     "title": "Редактор KAMOD — смонтируйте ИИ-клипы в фильм прямо в браузере",
+     "brief": "Полноценный видеоредактор в браузере: импортируйте генерации, соберите таймлайн, добавьте титры, используйте ИИ-инструменты и экспортируйте до 4K.",
+     "learn": [
+      "Формат: 16:9, 9:16 или 3:4",
+      "Импорт клипов и музыки на таймлайн",
+      "Заголовок на любом языке",
+      "ИИ-инструменты: озвучка, автосубтитры (и на узбекском), музыка",
+      "Экспорт MP4 до 4K"
+     ],
+     "video": "ru/lesson-12.mp4",
+     "poster": "ru/lesson-12.jpg",
+     "seconds": 90,
+     "bytes": 5906124
+    },
+    "uz": {
+     "title": "KAMOD muharriri — AI kliplarni brauzerda bitta filmga yig‘ing",
+     "brief": "Brauzerdagi to‘liq video muharrir: generatsiyalarni import qiling, taymlaynni yig‘ing, sarlavha qo‘shing, AI vositalaridan foydalaning va 4K gacha eksport qiling.",
+     "learn": [
+      "Format: 16:9, 9:16 yoki 3:4",
+      "Kliplar va musiqani taymlaynga import qilish",
+      "Istalgan tilda sarlavha",
+      "AI vositalari: matndan nutq, avto subtitrlar (o‘zbekcha ham), musiqa",
+      "4K gacha MP4 eksport"
+     ],
+     "video": "uz/lesson-12.mp4",
+     "poster": "uz/lesson-12.jpg",
+     "seconds": 90,
+     "bytes": 5889647
+    }
+   }
+  },
+  {
+   "n": 13,
+   "try": "/",
+   "langs": {
+    "en": {
+     "title": "The full workflow — from one idea to a finished film in KAMOD",
+     "brief": "Every step in one video: plan with AI Director, lock the look with boards, animate, restyle, add voice and music, translate and cut the final film.",
+     "learn": [
+      "How all KAMOD tools connect into one pipeline",
+      "Which tool to use at each stage",
+      "How one idea becomes a finished, localized film",
+      "Where to continue: every lesson in the series"
+     ],
+     "video": "en/lesson-13.mp4",
+     "poster": "en/lesson-13.jpg",
+     "seconds": 92,
+     "bytes": 8582303
+    },
+    "ru": {
+     "title": "Полный процесс — от одной идеи до готового фильма в KAMOD",
+     "brief": "Все шаги в одном видео: план с AI-режиссёром, образ на референс-досках, анимация, стиль, голос и музыка, перевод и финальный монтаж.",
+     "learn": [
+      "Как все инструменты KAMOD связаны в один процесс",
+      "Какой инструмент нужен на каждом этапе",
+      "Как одна идея становится готовым локализованным фильмом",
+      "Где продолжить: все уроки серии"
+     ],
+     "video": "ru/lesson-13.mp4",
+     "poster": "ru/lesson-13.jpg",
+     "seconds": 92,
+     "bytes": 8818833
+    },
+    "uz": {
+     "title": "To‘liq jarayon — bitta g‘oyadan tayyor filmgacha KAMODda",
+     "brief": "Barcha qadamlar bitta videoda: AI rejissyor bilan reja, doskalar bilan obraz, animatsiya, uslub, ovoz va musiqa, tarjima va yakuniy montaj.",
+     "learn": [
+      "KAMOD vositalari bitta jarayonga qanday bog‘lanadi",
+      "Har bir bosqichda qaysi vosita kerak",
+      "Bitta g‘oya qanday qilib tayyor, tarjima qilingan filmga aylanadi",
+      "Qayerda davom etish: seriyadagi barcha darslar"
+     ],
+     "video": "uz/lesson-13.mp4",
+     "poster": "uz/lesson-13.jpg",
+     "seconds": 92,
+     "bytes": 8778844
+    }
+   }
+  },
+  {
+   "n": 14,
+   "try": "/ai-director",
+   "langs": {
+    "en": {
+     "title": "AI Director tools — frames, clips and a voice-over from one idea",
+     "brief": "AI Director now takes you from one idea to finished frames, animated clips and a voice-over. A consistent character, place and look runs through every shot.",
+     "learn": [
+      "Pick a style preset and 4, 6 or 8 shots",
+      "Read the Continuity Bible and save your look for next time",
+      "Re-take one shot and drag shots into a new order",
+      "Generate all frames, animate the sequence and create a voice-over"
+     ],
+     "video": "en/lesson-14.mp4",
+     "poster": "en/lesson-14.jpg",
+     "seconds": 100,
+     "bytes": 7766534
+    },
+    "ru": {
+     "title": "Инструменты AI Режиссёра — кадры, клипы и озвучка из одной идеи",
+     "brief": "AI Режиссёр теперь ведёт от одной идеи до готовых кадров, анимированных клипов и озвучки — с одним героем, местом и стилем в каждом кадре.",
+     "learn": [
+      "Выберите стиль и 4, 6 или 8 кадров",
+      "Библия континуити и сохранённый образ для следующих проектов",
+      "Новый дубль одного кадра и смена порядка перетаскиванием",
+      "Создать все кадры, оживить последовательность и создать озвучку"
+     ],
+     "video": "ru/lesson-14.mp4",
+     "poster": "ru/lesson-14.jpg",
+     "seconds": 100,
+     "bytes": 8113520
+    },
+    "uz": {
+     "title": "AI Rejissyor vositalari — bitta g‘oyadan kadrlar, kliplar va ovozlashtirish",
+     "brief": "AI Rejissyor endi bitta g‘oyadan tayyor kadrlar, jonlantirilgan kliplar va ovozlashtirishgacha olib boradi — har bir kadrda bir xil qahramon, joy va uslub bilan.",
+     "learn": [
+      "Uslub va 4, 6 yoki 8 ta kadrni tanlang",
+      "Uzviylik qo‘llanmasi va keyingi loyihalar uchun saqlangan obraz",
+      "Bitta kadr uchun yangi dubl va tartibni surib o‘zgartirish",
+      "Barcha kadrlarni yaratish, ketma-ketlikni jonlantirish va ovozlashtirish"
+     ],
+     "video": "uz/lesson-14.mp4",
+     "poster": "uz/lesson-14.jpg",
+     "seconds": 100,
+     "bytes": 7992650
+    }
+   }
+  },
+  {
+   "n": 15,
+   "try": "/film-studio",
+   "langs": {
+    "en": {
+     "title": "MiniMax H3 Max & Max Turbo — motion graphics and cinematic video",
+     "brief": "Three MiniMax H3 models in AI Film Studio. Max Turbo makes sharp kinetic text and motion graphics in seconds; Max animates your frames with the highest detail.",
+     "learn": [
+      "Pick H3 Max Turbo, H3 Max or H3 2K",
+      "Create kinetic typography with clean, undistorted text",
+      "Animate a still frame with H3 Max at 1080p",
+      "Guide a shot with up to 12 references in Reference Director"
+     ],
+     "video": "en/lesson-15.mp4",
+     "poster": "en/lesson-15.jpg",
+     "seconds": 92,
+     "bytes": 6929497
+    },
+    "ru": {
+     "title": "MiniMax H3 Max и Max Turbo — моушн-графика и кинематографичное видео",
+     "brief": "Три модели MiniMax H3 в AI Film Studio. Max Turbo за секунды делает чёткий кинетический текст и моушн-графику, а Max оживляет ваши кадры с максимальной детализацией.",
+     "learn": [
+      "Выбор H3 Max Turbo, H3 Max или H3 2K",
+      "Кинетическая типографика с чистым текстом без искажений",
+      "Оживление кадра в H3 Max в 1080p",
+      "До 12 референсов в Reference Director"
+     ],
+     "video": "ru/lesson-15.mp4",
+     "poster": "ru/lesson-15.jpg",
+     "seconds": 92,
+     "bytes": 7308431
+    },
+    "uz": {
+     "title": "MiniMax H3 Max va Max Turbo — motion grafika va kinematografik video",
+     "brief": "AI Film Studio’da uchta MiniMax H3 modeli. Max Turbo soniyalarda tiniq kinetik matn va motion grafika yaratadi, Max esa kadrlaringizni eng yuqori detallar bilan jonlantiradi.",
+     "learn": [
+      "H3 Max Turbo, H3 Max yoki H3 2K ni tanlash",
+      "Buzilmaydigan toza matnli kinetik tipografika",
+      "H3 Max bilan kadrni 1080p da jonlantirish",
+      "Reference Director’da 12 tagacha namuna"
+     ],
+     "video": "uz/lesson-15.mp4",
+     "poster": "uz/lesson-15.jpg",
+     "seconds": 92,
+     "bytes": 7165236
+    }
+   }
+  },
+  {
+   "n": 16,
+   "try": "/film-studio?mode=seedance25",
+   "langs": {
+    "en": {
+     "title": "Seedance 2.5 Draft mode — check cheaply, finalize in Full HD",
+     "brief": "Make a cheap 480p draft first, then render only the version you like in Full HD with one click — the same prompt, image and timing are reused.",
+     "learn": [
+      "Choose Output quality: 480p · Draft",
+      "See the draft price before you start",
+      "Render in Full HD from the finished draft",
+      "Keep both versions in your history"
+     ],
+     "video": "en/lesson-16.mp4",
+     "poster": "en/lesson-16.jpg",
+     "seconds": 84,
+     "bytes": 5720195
+    },
+    "ru": {
+     "title": "Черновик Seedance 2.5 — проверьте дёшево, финализируйте в Full HD",
+     "brief": "Сначала дешёвый черновик в 480p, затем одним кликом рендер в Full HD только понравившейся версии — с тем же промптом, изображением и таймингом.",
+     "learn": [
+      "Качество: 480p · Черновик",
+      "Цена черновика видна до запуска",
+      "Рендер в Full HD из готового черновика",
+      "Обе версии остаются в истории"
+     ],
+     "video": "ru/lesson-16.mp4",
+     "poster": "ru/lesson-16.jpg",
+     "seconds": 84,
+     "bytes": 5880718
+    },
+    "uz": {
+     "title": "Seedance 2.5 qoralamasi — arzon tekshiring, Full HD da yakunlang",
+     "brief": "Avval arzon 480p qoralama, so‘ng bir bosishda faqat yoqqan versiyani Full HD da render qiling — o‘sha prompt, rasm va vaqt bilan.",
+     "learn": [
+      "Sifat: 480p · Qoralama",
+      "Qoralama narxi oldindan ko‘rinadi",
+      "Tayyor qoralamadan Full HD render",
+      "Ikkala versiya tarixda qoladi"
+     ],
+     "video": "uz/lesson-16.mp4",
+     "poster": "uz/lesson-16.jpg",
+     "seconds": 84,
+     "bytes": 5813173
+    }
+   }
+  }
+ ]
+}
