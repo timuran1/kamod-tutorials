@@ -17,7 +17,19 @@
      "video": "en/lesson-01.mp4",
      "poster": "en/lesson-01.jpg",
      "seconds": 94,
-     "bytes": 7178396
+     "bytes": 7178396,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-01.mp4",
+       "poster": "en/lesson-01.jpg",
+       "bytes": 7178396
+      },
+      "9x16": {
+       "video": "en/lesson-01-9x16.mp4",
+       "poster": "en/lesson-01-9x16.jpg",
+       "bytes": 5244903
+      }
+     }
     },
     "ru": {
      "title": "С чего начать — ваше первое ИИ-видео в KAMOD",
@@ -31,7 +43,19 @@
      "video": "ru/lesson-01.mp4",
      "poster": "ru/lesson-01.jpg",
      "seconds": 94,
-     "bytes": 7531727
+     "bytes": 7531727,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-01.mp4",
+       "poster": "ru/lesson-01.jpg",
+       "bytes": 7531727
+      },
+      "9x16": {
+       "video": "ru/lesson-01-9x16.mp4",
+       "poster": "ru/lesson-01-9x16.jpg",
+       "bytes": 5523197
+      }
+     }
     },
     "uz": {
      "title": "Shu yerdan boshlang — KAMODda birinchi AI videongiz",
@@ -45,7 +69,19 @@
      "video": "uz/lesson-01.mp4",
      "poster": "uz/lesson-01.jpg",
      "seconds": 94,
-     "bytes": 7397003
+     "bytes": 7397003,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-01.mp4",
+       "poster": "uz/lesson-01.jpg",
+       "bytes": 7397003
+      },
+      "9x16": {
+       "video": "uz/lesson-01-9x16.mp4",
+       "poster": "uz/lesson-01-9x16.jpg",
+       "bytes": 5446647
+      }
+     }
     }
    }
   },
@@ -65,7 +101,19 @@
      "video": "en/lesson-02.mp4",
      "poster": "en/lesson-02.jpg",
      "seconds": 96,
-     "bytes": 8013085
+     "bytes": 8013085,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-02.mp4",
+       "poster": "en/lesson-02.jpg",
+       "bytes": 8013085
+      },
+      "9x16": {
+       "video": "en/lesson-02-9x16.mp4",
+       "poster": "en/lesson-02-9x16.jpg",
+       "bytes": 5477178
+      }
+     }
     },
     "ru": {
      "title": "AI-режиссёр — из одной идеи в покадровый план",
@@ -79,7 +127,19 @@
      "video": "ru/lesson-02.mp4",
      "poster": "ru/lesson-02.jpg",
      "seconds": 96,
-     "bytes": 8421791
+     "bytes": 8421791,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-02.mp4",
+       "poster": "ru/lesson-02.jpg",
+       "bytes": 8421791
+      },
+      "9x16": {
+       "video": "ru/lesson-02-9x16.mp4",
+       "poster": "ru/lesson-02-9x16.jpg",
+       "bytes": 5734451
+      }
+     }
     },
     "uz": {
      "title": "AI rejissyor — bitta g‘oyadan kadrma-kadr rejagacha",
@@ -93,7 +153,19 @@
      "video": "uz/lesson-02.mp4",
      "poster": "uz/lesson-02.jpg",
      "seconds": 96,
-     "bytes": 8380649
+     "bytes": 8380649,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-02.mp4",
+       "poster": "uz/lesson-02.jpg",
+       "bytes": 8380649
+      },
+      "9x16": {
+       "video": "uz/lesson-02-9x16.mp4",
+       "poster": "uz/lesson-02-9x16.jpg",
+       "bytes": 5668632
+      }
+     }
     }
    }
   },
@@ -113,7 +185,19 @@
      "video": "en/lesson-03.mp4",
      "poster": "en/lesson-03.jpg",
      "seconds": 94,
-     "bytes": 6966438
+     "bytes": 6966438,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-03.mp4",
+       "poster": "en/lesson-03.jpg",
+       "bytes": 6966438
+      },
+      "9x16": {
+       "video": "en/lesson-03-9x16.mp4",
+       "poster": "en/lesson-03-9x16.jpg",
+       "bytes": 4809468
+      }
+     }
     },
     "ru": {
      "title": "AI Film Studio — из текста и изображений в кинематографичное видео",
@@ -127,7 +211,19 @@
      "video": "ru/lesson-03.mp4",
      "poster": "ru/lesson-03.jpg",
      "seconds": 94,
-     "bytes": 7098912
+     "bytes": 7098912,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-03.mp4",
+       "poster": "ru/lesson-03.jpg",
+       "bytes": 7098912
+      },
+      "9x16": {
+       "video": "ru/lesson-03-9x16.mp4",
+       "poster": "ru/lesson-03-9x16.jpg",
+       "bytes": 4835238
+      }
+     }
     },
     "uz": {
      "title": "AI Film Studio — matn va rasmlardan kinematografik video",
@@ -141,7 +237,19 @@
      "video": "uz/lesson-03.mp4",
      "poster": "uz/lesson-03.jpg",
      "seconds": 94,
-     "bytes": 6897668
+     "bytes": 6897668,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-03.mp4",
+       "poster": "uz/lesson-03.jpg",
+       "bytes": 6897668
+      },
+      "9x16": {
+       "video": "uz/lesson-03-9x16.mp4",
+       "poster": "uz/lesson-03-9x16.jpg",
+       "bytes": 4717077
+      }
+     }
     }
    }
   },
@@ -161,7 +269,19 @@
      "video": "en/lesson-04.mp4",
      "poster": "en/lesson-04.jpg",
      "seconds": 104,
-     "bytes": 8624325
+     "bytes": 8624325,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-04.mp4",
+       "poster": "en/lesson-04.jpg",
+       "bytes": 8624325
+      },
+      "9x16": {
+       "video": "en/lesson-04-9x16.mp4",
+       "poster": "en/lesson-04-9x16.jpg",
+       "bytes": 6354520
+      }
+     }
     },
     "ru": {
      "title": "Первый и последний кадр + Комбайнер — полный контроль переходов",
@@ -175,7 +295,19 @@
      "video": "ru/lesson-04.mp4",
      "poster": "ru/lesson-04.jpg",
      "seconds": 104,
-     "bytes": 9003651
+     "bytes": 9003651,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-04.mp4",
+       "poster": "ru/lesson-04.jpg",
+       "bytes": 9003651
+      },
+      "9x16": {
+       "video": "ru/lesson-04-9x16.mp4",
+       "poster": "ru/lesson-04-9x16.jpg",
+       "bytes": 6594733
+      }
+     }
     },
     "uz": {
      "title": "Birinchi va oxirgi kadr + Combiner — o‘tishlarni to‘liq boshqaring",
@@ -189,7 +321,19 @@
      "video": "uz/lesson-04.mp4",
      "poster": "uz/lesson-04.jpg",
      "seconds": 104,
-     "bytes": 8845827
+     "bytes": 8845827,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-04.mp4",
+       "poster": "uz/lesson-04.jpg",
+       "bytes": 8845827
+      },
+      "9x16": {
+       "video": "uz/lesson-04-9x16.mp4",
+       "poster": "uz/lesson-04-9x16.jpg",
+       "bytes": 6456136
+      }
+     }
     }
    }
   },
@@ -209,7 +353,19 @@
      "video": "en/lesson-05.mp4",
      "poster": "en/lesson-05.jpg",
      "seconds": 95,
-     "bytes": 7437302
+     "bytes": 7437302,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-05.mp4",
+       "poster": "en/lesson-05.jpg",
+       "bytes": 7437302
+      },
+      "9x16": {
+       "video": "en/lesson-05-9x16.mp4",
+       "poster": "en/lesson-05-9x16.jpg",
+       "bytes": 5608726
+      }
+     }
     },
     "ru": {
      "title": "Omni Edit — измените стиль или детали видео одной фразой",
@@ -223,7 +379,19 @@
      "video": "ru/lesson-05.mp4",
      "poster": "ru/lesson-05.jpg",
      "seconds": 95,
-     "bytes": 7420402
+     "bytes": 7420402,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-05.mp4",
+       "poster": "ru/lesson-05.jpg",
+       "bytes": 7420402
+      },
+      "9x16": {
+       "video": "ru/lesson-05-9x16.mp4",
+       "poster": "ru/lesson-05-9x16.jpg",
+       "bytes": 5481473
+      }
+     }
     },
     "uz": {
      "title": "Omni Edit — videoning uslubi yoki detallarini bitta jumla bilan o‘zgartiring",
@@ -237,7 +405,19 @@
      "video": "uz/lesson-05.mp4",
      "poster": "uz/lesson-05.jpg",
      "seconds": 95,
-     "bytes": 7291266
+     "bytes": 7291266,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-05.mp4",
+       "poster": "uz/lesson-05.jpg",
+       "bytes": 7291266
+      },
+      "9x16": {
+       "video": "uz/lesson-05-9x16.mp4",
+       "poster": "uz/lesson-05-9x16.jpg",
+       "bytes": 5422597
+      }
+     }
     }
    }
   },
@@ -257,7 +437,19 @@
      "video": "en/lesson-06.mp4",
      "poster": "en/lesson-06.jpg",
      "seconds": 92,
-     "bytes": 6880887
+     "bytes": 6880887,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-06.mp4",
+       "poster": "en/lesson-06.jpg",
+       "bytes": 6880887
+      },
+      "9x16": {
+       "video": "en/lesson-06-9x16.mp4",
+       "poster": "en/lesson-06-9x16.jpg",
+       "bytes": 4887441
+      }
+     }
     },
     "ru": {
      "title": "AI Images — создавайте и редактируйте изображения для фильма",
@@ -271,7 +463,19 @@
      "video": "ru/lesson-06.mp4",
      "poster": "ru/lesson-06.jpg",
      "seconds": 92,
-     "bytes": 7292176
+     "bytes": 7292176,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-06.mp4",
+       "poster": "ru/lesson-06.jpg",
+       "bytes": 7292176
+      },
+      "9x16": {
+       "video": "ru/lesson-06-9x16.mp4",
+       "poster": "ru/lesson-06-9x16.jpg",
+       "bytes": 5105428
+      }
+     }
     },
     "uz": {
      "title": "AI Images — film uchun rasmlarni yarating va tahrirlang",
@@ -285,7 +489,19 @@
      "video": "uz/lesson-06.mp4",
      "poster": "uz/lesson-06.jpg",
      "seconds": 92,
-     "bytes": 7044169
+     "bytes": 7044169,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-06.mp4",
+       "poster": "uz/lesson-06.jpg",
+       "bytes": 7044169
+      },
+      "9x16": {
+       "video": "uz/lesson-06-9x16.mp4",
+       "poster": "uz/lesson-06-9x16.jpg",
+       "bytes": 4985297
+      }
+     }
     }
    }
   },
@@ -305,7 +521,19 @@
      "video": "en/lesson-07.mp4",
      "poster": "en/lesson-07.jpg",
      "seconds": 86,
-     "bytes": 9235360
+     "bytes": 9235360,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-07.mp4",
+       "poster": "en/lesson-07.jpg",
+       "bytes": 9235360
+      },
+      "9x16": {
+       "video": "en/lesson-07-9x16.mp4",
+       "poster": "en/lesson-07-9x16.jpg",
+       "bytes": 6380094
+      }
+     }
     },
     "ru": {
      "title": "Референс-доски — герой и локация одинаковые в каждом кадре",
@@ -319,7 +547,19 @@
      "video": "ru/lesson-07.mp4",
      "poster": "ru/lesson-07.jpg",
      "seconds": 86,
-     "bytes": 9623341
+     "bytes": 9623341,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-07.mp4",
+       "poster": "ru/lesson-07.jpg",
+       "bytes": 9623341
+      },
+      "9x16": {
+       "video": "ru/lesson-07-9x16.mp4",
+       "poster": "ru/lesson-07-9x16.jpg",
+       "bytes": 6723834
+      }
+     }
     },
     "uz": {
      "title": "Namuna doskalari — qahramon va joy har bir kadrda bir xil",
@@ -333,7 +573,19 @@
      "video": "uz/lesson-07.mp4",
      "poster": "uz/lesson-07.jpg",
      "seconds": 86,
-     "bytes": 9470716
+     "bytes": 9470716,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-07.mp4",
+       "poster": "uz/lesson-07.jpg",
+       "bytes": 9470716
+      },
+      "9x16": {
+       "video": "uz/lesson-07-9x16.mp4",
+       "poster": "uz/lesson-07-9x16.jpg",
+       "bytes": 6645652
+      }
+     }
     }
    }
   },
@@ -353,7 +605,19 @@
      "video": "en/lesson-08.mp4",
      "poster": "en/lesson-08.jpg",
      "seconds": 84,
-     "bytes": 5859467
+     "bytes": 5859467,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-08.mp4",
+       "poster": "en/lesson-08.jpg",
+       "bytes": 5859467
+      },
+      "9x16": {
+       "video": "en/lesson-08-9x16.mp4",
+       "poster": "en/lesson-08-9x16.jpg",
+       "bytes": 4353329
+      }
+     }
     },
     "ru": {
      "title": "Логотип и брендинг — от логотипа до мокапов за минуты",
@@ -367,7 +631,19 @@
      "video": "ru/lesson-08.mp4",
      "poster": "ru/lesson-08.jpg",
      "seconds": 84,
-     "bytes": 6120993
+     "bytes": 6120993,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-08.mp4",
+       "poster": "ru/lesson-08.jpg",
+       "bytes": 6120993
+      },
+      "9x16": {
+       "video": "ru/lesson-08-9x16.mp4",
+       "poster": "ru/lesson-08-9x16.jpg",
+       "bytes": 4524703
+      }
+     }
     },
     "uz": {
      "title": "Logo va brending — logotipdan brend mokaplarigacha daqiqalarda",
@@ -381,7 +657,19 @@
      "video": "uz/lesson-08.mp4",
      "poster": "uz/lesson-08.jpg",
      "seconds": 84,
-     "bytes": 5872082
+     "bytes": 5872082,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-08.mp4",
+       "poster": "uz/lesson-08.jpg",
+       "bytes": 5872082
+      },
+      "9x16": {
+       "video": "uz/lesson-08-9x16.mp4",
+       "poster": "uz/lesson-08-9x16.jpg",
+       "bytes": 4412228
+      }
+     }
     }
    }
   },
@@ -401,7 +689,19 @@
      "video": "en/lesson-09.mp4",
      "poster": "en/lesson-09.jpg",
      "seconds": 96,
-     "bytes": 8048977
+     "bytes": 8048977,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-09.mp4",
+       "poster": "en/lesson-09.jpg",
+       "bytes": 8048977
+      },
+      "9x16": {
+       "video": "en/lesson-09-9x16.mp4",
+       "poster": "en/lesson-09-9x16.jpg",
+       "bytes": 5299178
+      }
+     }
     },
     "ru": {
      "title": "UGC и реклама товаров — блогер, который рассказывает о вашем товаре",
@@ -415,7 +715,19 @@
      "video": "ru/lesson-09.mp4",
      "poster": "ru/lesson-09.jpg",
      "seconds": 96,
-     "bytes": 8315168
+     "bytes": 8315168,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-09.mp4",
+       "poster": "ru/lesson-09.jpg",
+       "bytes": 8315168
+      },
+      "9x16": {
+       "video": "ru/lesson-09-9x16.mp4",
+       "poster": "ru/lesson-09-9x16.jpg",
+       "bytes": 5445351
+      }
+     }
     },
     "uz": {
      "title": "UGC va mahsulot reklamasi — mahsulotingiz haqida gapiradigan bloger",
@@ -429,7 +741,19 @@
      "video": "uz/lesson-09.mp4",
      "poster": "uz/lesson-09.jpg",
      "seconds": 96,
-     "bytes": 8107377
+     "bytes": 8107377,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-09.mp4",
+       "poster": "uz/lesson-09.jpg",
+       "bytes": 8107377
+      },
+      "9x16": {
+       "video": "uz/lesson-09-9x16.mp4",
+       "poster": "uz/lesson-09-9x16.jpg",
+       "bytes": 5339105
+      }
+     }
     }
    }
   },
@@ -449,7 +773,19 @@
      "video": "en/lesson-10.mp4",
      "poster": "en/lesson-10.jpg",
      "seconds": 90,
-     "bytes": 5246300
+     "bytes": 5246300,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-10.mp4",
+       "poster": "en/lesson-10.jpg",
+       "bytes": 5246300
+      },
+      "9x16": {
+       "video": "en/lesson-10-9x16.mp4",
+       "poster": "en/lesson-10-9x16.jpg",
+       "bytes": 3665319
+      }
+     }
     },
     "ru": {
      "title": "Голос и музыка — саундтреки, озвучка и звуковые эффекты",
@@ -463,7 +799,19 @@
      "video": "ru/lesson-10.mp4",
      "poster": "ru/lesson-10.jpg",
      "seconds": 90,
-     "bytes": 5643823
+     "bytes": 5643823,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-10.mp4",
+       "poster": "ru/lesson-10.jpg",
+       "bytes": 5643823
+      },
+      "9x16": {
+       "video": "ru/lesson-10-9x16.mp4",
+       "poster": "ru/lesson-10-9x16.jpg",
+       "bytes": 3904195
+      }
+     }
     },
     "uz": {
      "title": "Ovoz va musiqa — saundtrek, ovozlashtirish va ovoz effektlari",
@@ -477,7 +825,19 @@
      "video": "uz/lesson-10.mp4",
      "poster": "uz/lesson-10.jpg",
      "seconds": 90,
-     "bytes": 5612747
+     "bytes": 5612747,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-10.mp4",
+       "poster": "uz/lesson-10.jpg",
+       "bytes": 5612747
+      },
+      "9x16": {
+       "video": "uz/lesson-10-9x16.mp4",
+       "poster": "uz/lesson-10-9x16.jpg",
+       "bytes": 3857981
+      }
+     }
     }
    }
   },
@@ -497,7 +857,19 @@
      "video": "en/lesson-11.mp4",
      "poster": "en/lesson-11.jpg",
      "seconds": 96,
-     "bytes": 7994861
+     "bytes": 7994861,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-11.mp4",
+       "poster": "en/lesson-11.jpg",
+       "bytes": 7994861
+      },
+      "9x16": {
+       "video": "en/lesson-11-9x16.mp4",
+       "poster": "en/lesson-11-9x16.jpg",
+       "bytes": 5587194
+      }
+     }
     },
     "ru": {
      "title": "Перевод и рефрейм — одно видео для всех языков и экранов",
@@ -511,7 +883,19 @@
      "video": "ru/lesson-11.mp4",
      "poster": "ru/lesson-11.jpg",
      "seconds": 96,
-     "bytes": 8187401
+     "bytes": 8187401,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-11.mp4",
+       "poster": "ru/lesson-11.jpg",
+       "bytes": 8187401
+      },
+      "9x16": {
+       "video": "ru/lesson-11-9x16.mp4",
+       "poster": "ru/lesson-11-9x16.jpg",
+       "bytes": 5691041
+      }
+     }
     },
     "uz": {
      "title": "Tarjima va reframe — bitta video barcha tillar va ekranlar uchun",
@@ -525,7 +909,19 @@
      "video": "uz/lesson-11.mp4",
      "poster": "uz/lesson-11.jpg",
      "seconds": 96,
-     "bytes": 8122591
+     "bytes": 8122591,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-11.mp4",
+       "poster": "uz/lesson-11.jpg",
+       "bytes": 8122591
+      },
+      "9x16": {
+       "video": "uz/lesson-11-9x16.mp4",
+       "poster": "uz/lesson-11-9x16.jpg",
+       "bytes": 5660058
+      }
+     }
     }
    }
   },
@@ -546,7 +942,19 @@
      "video": "en/lesson-12.mp4",
      "poster": "en/lesson-12.jpg",
      "seconds": 90,
-     "bytes": 5787739
+     "bytes": 5787739,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-12.mp4",
+       "poster": "en/lesson-12.jpg",
+       "bytes": 5787739
+      },
+      "9x16": {
+       "video": "en/lesson-12-9x16.mp4",
+       "poster": "en/lesson-12-9x16.jpg",
+       "bytes": 3627887
+      }
+     }
     },
     "ru": {
      "title": "Редактор KAMOD — смонтируйте ИИ-клипы в фильм прямо в браузере",
@@ -561,7 +969,19 @@
      "video": "ru/lesson-12.mp4",
      "poster": "ru/lesson-12.jpg",
      "seconds": 90,
-     "bytes": 5906124
+     "bytes": 5906124,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-12.mp4",
+       "poster": "ru/lesson-12.jpg",
+       "bytes": 5906124
+      },
+      "9x16": {
+       "video": "ru/lesson-12-9x16.mp4",
+       "poster": "ru/lesson-12-9x16.jpg",
+       "bytes": 3701792
+      }
+     }
     },
     "uz": {
      "title": "KAMOD muharriri — AI kliplarni brauzerda bitta filmga yig‘ing",
@@ -576,7 +996,19 @@
      "video": "uz/lesson-12.mp4",
      "poster": "uz/lesson-12.jpg",
      "seconds": 90,
-     "bytes": 5889647
+     "bytes": 5889647,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-12.mp4",
+       "poster": "uz/lesson-12.jpg",
+       "bytes": 5889647
+      },
+      "9x16": {
+       "video": "uz/lesson-12-9x16.mp4",
+       "poster": "uz/lesson-12-9x16.jpg",
+       "bytes": 3675964
+      }
+     }
     }
    }
   },
@@ -596,7 +1028,19 @@
      "video": "en/lesson-13.mp4",
      "poster": "en/lesson-13.jpg",
      "seconds": 92,
-     "bytes": 8582303
+     "bytes": 8582303,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-13.mp4",
+       "poster": "en/lesson-13.jpg",
+       "bytes": 8582303
+      },
+      "9x16": {
+       "video": "en/lesson-13-9x16.mp4",
+       "poster": "en/lesson-13-9x16.jpg",
+       "bytes": 6733328
+      }
+     }
     },
     "ru": {
      "title": "Полный процесс — от одной идеи до готового фильма в KAMOD",
@@ -610,7 +1054,19 @@
      "video": "ru/lesson-13.mp4",
      "poster": "ru/lesson-13.jpg",
      "seconds": 92,
-     "bytes": 8818833
+     "bytes": 8818833,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-13.mp4",
+       "poster": "ru/lesson-13.jpg",
+       "bytes": 8818833
+      },
+      "9x16": {
+       "video": "ru/lesson-13-9x16.mp4",
+       "poster": "ru/lesson-13-9x16.jpg",
+       "bytes": 6858003
+      }
+     }
     },
     "uz": {
      "title": "To‘liq jarayon — bitta g‘oyadan tayyor filmgacha KAMODda",
@@ -624,7 +1080,19 @@
      "video": "uz/lesson-13.mp4",
      "poster": "uz/lesson-13.jpg",
      "seconds": 92,
-     "bytes": 8778844
+     "bytes": 8778844,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-13.mp4",
+       "poster": "uz/lesson-13.jpg",
+       "bytes": 8778844
+      },
+      "9x16": {
+       "video": "uz/lesson-13-9x16.mp4",
+       "poster": "uz/lesson-13-9x16.jpg",
+       "bytes": 6848920
+      }
+     }
     }
    }
   },
@@ -644,7 +1112,19 @@
      "video": "en/lesson-14.mp4",
      "poster": "en/lesson-14.jpg",
      "seconds": 100,
-     "bytes": 7766534
+     "bytes": 7766534,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-14.mp4",
+       "poster": "en/lesson-14.jpg",
+       "bytes": 7766534
+      },
+      "9x16": {
+       "video": "en/lesson-14-9x16.mp4",
+       "poster": "en/lesson-14-9x16.jpg",
+       "bytes": 5102045
+      }
+     }
     },
     "ru": {
      "title": "Инструменты AI Режиссёра — кадры, клипы и озвучка из одной идеи",
@@ -658,7 +1138,19 @@
      "video": "ru/lesson-14.mp4",
      "poster": "ru/lesson-14.jpg",
      "seconds": 100,
-     "bytes": 8113520
+     "bytes": 8113520,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-14.mp4",
+       "poster": "ru/lesson-14.jpg",
+       "bytes": 8113520
+      },
+      "9x16": {
+       "video": "ru/lesson-14-9x16.mp4",
+       "poster": "ru/lesson-14-9x16.jpg",
+       "bytes": 5276264
+      }
+     }
     },
     "uz": {
      "title": "AI Rejissyor vositalari — bitta g‘oyadan kadrlar, kliplar va ovozlashtirish",
@@ -672,7 +1164,19 @@
      "video": "uz/lesson-14.mp4",
      "poster": "uz/lesson-14.jpg",
      "seconds": 100,
-     "bytes": 7992650
+     "bytes": 7992650,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-14.mp4",
+       "poster": "uz/lesson-14.jpg",
+       "bytes": 7992650
+      },
+      "9x16": {
+       "video": "uz/lesson-14-9x16.mp4",
+       "poster": "uz/lesson-14-9x16.jpg",
+       "bytes": 5212048
+      }
+     }
     }
    }
   },
@@ -692,7 +1196,19 @@
      "video": "en/lesson-15.mp4",
      "poster": "en/lesson-15.jpg",
      "seconds": 92,
-     "bytes": 6929497
+     "bytes": 6929497,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-15.mp4",
+       "poster": "en/lesson-15.jpg",
+       "bytes": 6929497
+      },
+      "9x16": {
+       "video": "en/lesson-15-9x16.mp4",
+       "poster": "en/lesson-15-9x16.jpg",
+       "bytes": 4704441
+      }
+     }
     },
     "ru": {
      "title": "MiniMax H3 Max и Max Turbo — моушн-графика и кинематографичное видео",
@@ -706,7 +1222,19 @@
      "video": "ru/lesson-15.mp4",
      "poster": "ru/lesson-15.jpg",
      "seconds": 92,
-     "bytes": 7308431
+     "bytes": 7308431,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-15.mp4",
+       "poster": "ru/lesson-15.jpg",
+       "bytes": 7308431
+      },
+      "9x16": {
+       "video": "ru/lesson-15-9x16.mp4",
+       "poster": "ru/lesson-15-9x16.jpg",
+       "bytes": 4952606
+      }
+     }
     },
     "uz": {
      "title": "MiniMax H3 Max va Max Turbo — motion grafika va kinematografik video",
@@ -720,7 +1248,19 @@
      "video": "uz/lesson-15.mp4",
      "poster": "uz/lesson-15.jpg",
      "seconds": 92,
-     "bytes": 7165236
+     "bytes": 7165236,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-15.mp4",
+       "poster": "uz/lesson-15.jpg",
+       "bytes": 7165236
+      },
+      "9x16": {
+       "video": "uz/lesson-15-9x16.mp4",
+       "poster": "uz/lesson-15-9x16.jpg",
+       "bytes": 4906417
+      }
+     }
     }
    }
   },
@@ -740,7 +1280,19 @@
      "video": "en/lesson-16.mp4",
      "poster": "en/lesson-16.jpg",
      "seconds": 84,
-     "bytes": 5720195
+     "bytes": 5720195,
+     "formats": {
+      "16x9": {
+       "video": "en/lesson-16.mp4",
+       "poster": "en/lesson-16.jpg",
+       "bytes": 5720195
+      },
+      "9x16": {
+       "video": "en/lesson-16-9x16.mp4",
+       "poster": "en/lesson-16-9x16.jpg",
+       "bytes": 3989482
+      }
+     }
     },
     "ru": {
      "title": "Черновик Seedance 2.5 — проверьте дёшево, финализируйте в Full HD",
@@ -754,7 +1306,19 @@
      "video": "ru/lesson-16.mp4",
      "poster": "ru/lesson-16.jpg",
      "seconds": 84,
-     "bytes": 5880718
+     "bytes": 5880718,
+     "formats": {
+      "16x9": {
+       "video": "ru/lesson-16.mp4",
+       "poster": "ru/lesson-16.jpg",
+       "bytes": 5880718
+      },
+      "9x16": {
+       "video": "ru/lesson-16-9x16.mp4",
+       "poster": "ru/lesson-16-9x16.jpg",
+       "bytes": 4081704
+      }
+     }
     },
     "uz": {
      "title": "Seedance 2.5 qoralamasi — arzon tekshiring, Full HD da yakunlang",
@@ -768,7 +1332,19 @@
      "video": "uz/lesson-16.mp4",
      "poster": "uz/lesson-16.jpg",
      "seconds": 84,
-     "bytes": 5813173
+     "bytes": 5813173,
+     "formats": {
+      "16x9": {
+       "video": "uz/lesson-16.mp4",
+       "poster": "uz/lesson-16.jpg",
+       "bytes": 5813173
+      },
+      "9x16": {
+       "video": "uz/lesson-16-9x16.mp4",
+       "poster": "uz/lesson-16-9x16.jpg",
+       "bytes": 4043918
+      }
+     }
     }
    }
   }

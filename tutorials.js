@@ -11,27 +11,31 @@
   "use strict";
   const STORE = "kamod_tutorials_v1";
   const LANGS = ["en", "ru", "uz"];
+  const FORMATS = ["16x9", "9x16"];
   const UI = {
     en: { title: "Tutorials", sub: "16 short lessons — watch, try it in KAMOD, then check what you learned.",
       done: "{d} of {t} lessons completed", all: "All", todo: "To do", finished: "Completed", lesson: "Lesson",
       watch: "Watch", download: "Download", check: "Check", learn: "Check the lesson — I can…",
       tryIt: "Try it in KAMOD", prev: "Previous", next: "Next lesson", close: "Close", completed: "Completed",
       watched: "Watched", allDone: "Lesson complete — nice work!", tick: "Tick what you can do now.",
-      lessonLang: "Lesson language", reset: "Reset progress", resetQ: "Reset all lesson progress?",
+      lessonLang: "Lesson language", videoFormat: "Video format", horizontal: "Landscape", vertical: "Vertical",
+      reset: "Reset progress", resetQ: "Reset all lesson progress?",
       downloading: "Downloading…", empty: "Nothing here yet.", min: "min", loadErr: "Could not load the lessons. Check your connection and try again." },
     ru: { title: "Уроки", sub: "16 коротких уроков — смотрите, пробуйте в KAMOD и проверяйте себя.",
       done: "Пройдено уроков: {d} из {t}", all: "Все", todo: "Не пройдены", finished: "Пройдены", lesson: "Урок",
       watch: "Смотреть", download: "Скачать", check: "Проверка", learn: "Проверьте себя — я умею…",
       tryIt: "Попробовать в KAMOD", prev: "Назад", next: "Следующий урок", close: "Закрыть", completed: "Пройден",
       watched: "Просмотрен", allDone: "Урок пройден — отлично!", tick: "Отметьте то, что уже умеете.",
-      lessonLang: "Язык урока", reset: "Сбросить прогресс", resetQ: "Сбросить прогресс всех уроков?",
+      lessonLang: "Язык урока", videoFormat: "Формат видео", horizontal: "Горизонтально", vertical: "Вертикально",
+      reset: "Сбросить прогресс", resetQ: "Сбросить прогресс всех уроков?",
       downloading: "Скачиваем…", empty: "Здесь пока пусто.", min: "мин", loadErr: "Не удалось загрузить уроки. Проверьте интернет и попробуйте снова." },
     uz: { title: "Darsliklar", sub: "16 ta qisqa dars — tomosha qiling, KAMODda sinab ko‘ring va o‘zingizni tekshiring.",
       done: "{t} ta darsdan {d} tasi o‘tildi", all: "Barchasi", todo: "O‘tilmagan", finished: "O‘tilgan", lesson: "Dars",
       watch: "Ko‘rish", download: "Yuklab olish", check: "Tekshirish", learn: "O‘zingizni tekshiring — men bilaman…",
       tryIt: "KAMODda sinab ko‘rish", prev: "Oldingi", next: "Keyingi dars", close: "Yopish", completed: "O‘tildi",
       watched: "Ko‘rildi", allDone: "Dars o‘tildi — barakalla!", tick: "Endi qila oladigan narsalarni belgilang.",
-      lessonLang: "Dars tili", reset: "Natijani tozalash", resetQ: "Barcha darslar bo‘yicha natija tozalansinmi?",
+      lessonLang: "Dars tili", videoFormat: "Video formati", horizontal: "Gorizontal", vertical: "Vertikal",
+      reset: "Natijani tozalash", resetQ: "Barcha darslar bo‘yicha natija tozalansinmi?",
       downloading: "Yuklanmoqda…", empty: "Hozircha bo‘sh.", min: "daq", loadErr: "Darslarni yuklab bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring." },
   };
 
@@ -49,6 +53,7 @@
   .kt-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#FF6B35,#ffb08f);border-radius:99px;transition:width .5s ease;box-shadow:0 0 14px rgba(255,107,53,.6)}
   .kt-reset{background:none;border:0;color:var(--kt-dim);font:inherit;font-size:12px;cursor:pointer;padding:0;text-decoration:underline}
   .kt-bar-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:20px}
+  .kt-control-groups{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
   .kt-seg{display:inline-flex;padding:4px;gap:2px;border-radius:12px;background:var(--kt-surface);border:1px solid var(--kt-line)}
   .kt-seg button{border:0;background:transparent;color:var(--kt-dim);font:600 13px/1 inherit;padding:9px 14px;border-radius:9px;cursor:pointer}
   .kt-seg button[aria-pressed=true]{background:rgba(255,107,53,.16);color:var(--kt-ink);box-shadow:inset 0 0 0 1px rgba(255,107,53,.45)}
@@ -58,6 +63,8 @@
   .kt-card:hover{transform:translateY(-3px);border-color:rgba(255,107,53,.45);box-shadow:0 18px 40px rgba(0,0,0,.45),0 0 0 1px rgba(255,107,53,.15)}
   .kt-card.is-done{border-color:rgba(74,222,128,.35)}
   .kt-thumb{position:relative;aspect-ratio:16/9;background:#000;border:0;padding:0;cursor:pointer;display:block;width:100%}
+  .kt-grid.is-portrait{grid-template-columns:repeat(auto-fill,minmax(235px,1fr))}
+  .kt-thumb.is-portrait{aspect-ratio:9/16}
   .kt-thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92;transition:opacity .2s,transform .4s}
   .kt-card:hover .kt-thumb img{opacity:1;transform:scale(1.03)}
   .kt-play{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;padding:12px}
@@ -65,7 +72,7 @@
   .kt-card:hover .kt-play span{transform:scale(1.1)}
   .kt-play svg{width:18px;height:18px;margin-left:3px;fill:#111}
   .kt-badge{position:absolute;top:10px;padding:5px 9px;border-radius:8px;font:700 11px/1 inherit;background:rgba(10,10,15,.78);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.12)}
-  .kt-badge.n{left:10px}.kt-badge.t{right:10px;font-variant-numeric:tabular-nums}
+  .kt-badge.n{left:10px}.kt-badge.t{right:10px;font-variant-numeric:tabular-nums}.kt-badge.f{left:64px;top:auto;bottom:18px}
   .kt-badge.ok{left:auto;right:10px;top:auto;bottom:10px;background:rgba(22,101,52,.85);border-color:rgba(74,222,128,.5);color:#dcfce7}
   .kt-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
   .kt-title{margin:0;font-size:16px;line-height:1.3;font-weight:700;letter-spacing:-.015em}
@@ -83,7 +90,11 @@
   .kt-empty,.kt-err{padding:40px;text-align:center;color:var(--kt-dim);border:1px dashed var(--kt-line);border-radius:16px}
   .kt-modal{position:fixed;inset:0;z-index:100000;background:rgba(5,5,10,.82);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:16px}
   .kt-dialog{width:min(1180px,100%);max-height:calc(100vh - 32px);overflow:auto;display:grid;grid-template-columns:minmax(0,1fr) 340px;border-radius:18px;background:linear-gradient(180deg,#14141c,#0c0c12);border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 60px rgba(255,107,53,.08)}
+  .kt-media{display:flex;align-items:center;justify-content:center;background:#000;min-width:0}
   .kt-dialog video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+  .kt-dialog.is-portrait{width:min(920px,100%);grid-template-columns:minmax(300px,540px) 340px}
+  .kt-dialog.is-portrait .kt-media{background:radial-gradient(circle at 50% 35%,rgba(255,107,53,.13),transparent 55%),#050508}
+  .kt-dialog.is-portrait video{width:auto;max-width:100%;height:auto;max-height:calc(100vh - 34px);aspect-ratio:9/16}
   .kt-side{padding:22px;display:flex;flex-direction:column;gap:14px;border-left:1px solid var(--kt-line)}
   .kt-side h2{margin:0;font-size:19px;line-height:1.3;letter-spacing:-.02em}
   .kt-side .k{font:700 11px/1 inherit;letter-spacing:.08em;text-transform:uppercase;color:var(--kt-accent)}
@@ -99,7 +110,7 @@
   .kt-cheer{padding:12px;border-radius:12px;background:rgba(74,222,128,.12);border:1px solid rgba(74,222,128,.4);color:#bbf7d0;font-weight:600;font-size:13.5px;text-align:center}
   .kt-row{display:flex;gap:8px;flex-wrap:wrap}
   .kt-x{position:absolute;top:14px;right:16px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(10,10,15,.7);color:#fff;font-size:20px;cursor:pointer}
-  @media (max-width:860px){.kt-dialog{grid-template-columns:1fr}.kt-side{border-left:0;border-top:1px solid var(--kt-line)}.kt-progress{flex-basis:100%}}
+  @media (max-width:860px){.kt-dialog,.kt-dialog.is-portrait{grid-template-columns:1fr}.kt-dialog.is-portrait video{max-height:62vh}.kt-side{border-left:0;border-top:1px solid var(--kt-line)}.kt-progress{flex-basis:100%}}
   @media (prefers-reduced-motion:reduce){.kt-card,.kt-thumb img,.kt-bar i{transition:none}}`;
 
   function esc(s) {
@@ -119,6 +130,7 @@
     const base = opts.base || "./";
     const tryBase = opts.tryBase || "";
     let lang = LANGS.includes(opts.lang) ? opts.lang : "en";
+    let format = "16x9";
     let filter = "all";
     let lessons = [];
     let state = load();
@@ -126,6 +138,10 @@
 
     const url = rel => new URL(rel, new URL(base, location.href)).href;
     const T = () => UI[lang];
+    const media = d => {
+      const legacy = { video: d.video, poster: d.poster, bytes: d.bytes };
+      return (d.formats && d.formats[format]) || legacy;
+    };
     const entry = n => (state[n] = state[n] || { watched: false, checks: [] });
     const isDone = l => { const s = state[l.n]; const need = l.langs[lang].learn.length; return !!s && s.checks.filter(Boolean).length >= need; };
 
@@ -145,21 +161,26 @@
         <div class="kt-bar-row">
           <div class="kt-seg" role="group">${[["all", t.all], ["todo", t.todo], ["done", t.finished]].map(([k, v]) =>
             `<button type="button" data-filter="${k}" aria-pressed="${filter === k}">${esc(v)}</button>`).join("")}</div>
-          <div class="kt-seg" role="group" aria-label="${esc(t.lessonLang)}"><span class="cap">${esc(t.lessonLang)}</span>${LANGS.map(l =>
-            `<button type="button" data-lang="${l}" aria-pressed="${lang === l}">${l.toUpperCase()}</button>`).join("")}</div>
+          <div class="kt-control-groups">
+            <div class="kt-seg" role="group" aria-label="${esc(t.videoFormat)}"><span class="cap">${esc(t.videoFormat)}</span>${FORMATS.map(f =>
+              `<button type="button" data-format="${f}" aria-pressed="${format === f}" title="${esc(f === "9x16" ? t.vertical : t.horizontal)}">${f.replace("x", ":")}</button>`).join("")}</div>
+            <div class="kt-seg" role="group" aria-label="${esc(t.lessonLang)}"><span class="cap">${esc(t.lessonLang)}</span>${LANGS.map(l =>
+              `<button type="button" data-lang="${l}" aria-pressed="${lang === l}">${l.toUpperCase()}</button>`).join("")}</div>
+          </div>
         </div>
-        ${list.length ? `<div class="kt-grid">${list.map(card).join("")}</div>` : `<div class="kt-empty">${esc(t.empty)}</div>`}`;
+        ${list.length ? `<div class="kt-grid${format === "9x16" ? " is-portrait" : ""}">${list.map(card).join("")}</div>` : `<div class="kt-empty">${esc(t.empty)}</div>`}`;
     }
 
     function card(l) {
-      const t = T(), d = l.langs[lang], s = state[l.n] || { checks: [] };
+      const t = T(), d = l.langs[lang], m = media(d), s = state[l.n] || { checks: [] };
       const ticked = s.checks.filter(Boolean).length;
       return `<article class="kt-card${isDone(l) ? " is-done" : ""}" data-n="${l.n}">
-        <button type="button" class="kt-thumb" data-open="${l.n}" aria-label="${esc(t.watch + ": " + d.title)}">
-          <img src="${esc(url(d.poster))}" alt="" loading="lazy">
+        <button type="button" class="kt-thumb${format === "9x16" ? " is-portrait" : ""}" data-open="${l.n}" aria-label="${esc(t.watch + ": " + d.title)}">
+          <img src="${esc(url(m.poster))}" alt="" loading="lazy">
           <span class="kt-play"><span>${PLAY}</span></span>
           <span class="kt-badge n">${esc(t.lesson)} ${l.n}</span>
           <span class="kt-badge t">${mmss(d.seconds)}</span>
+          <span class="kt-badge f">${format.replace("x", ":")}</span>
           ${isDone(l) ? `<span class="kt-badge ok">✓ ${esc(t.completed)}</span>` : s.watched ? `<span class="kt-badge ok" style="background:rgba(10,10,15,.78);border-color:rgba(255,255,255,.2);color:#fff">👁 ${esc(t.watched)}</span>` : ""}
         </button>
         <div class="kt-body">
@@ -168,7 +189,7 @@
           <div class="kt-meter" title="${ticked}/${d.learn.length}">${d.learn.map((_, i) => `<i class="${s.checks[i] ? "on" : ""}"></i>`).join("")}</div>
           <div class="kt-actions">
             <button type="button" class="kt-btn primary" data-open="${l.n}">▶ ${esc(t.watch)}</button>
-            <button type="button" class="kt-btn slim" data-dl="${l.n}" title="${esc(t.download)} · ${mb(d.bytes)}" aria-label="${esc(t.download)} · ${mb(d.bytes)}">⬇ <small>${mb(d.bytes)}</small></button>
+            <button type="button" class="kt-btn slim" data-dl="${l.n}" title="${esc(t.download)} ${format.replace("x", ":")} · ${mb(m.bytes)}" aria-label="${esc(t.download)} ${format.replace("x", ":")} · ${mb(m.bytes)}">⬇ <small>${mb(m.bytes)}</small></button>
             <button type="button" class="kt-btn slim" data-open="${l.n}" data-focus-check="1" title="${esc(t.check)}" aria-label="${esc(t.check)} ${ticked}/${d.learn.length}">✓ ${ticked}/${d.learn.length}</button>
           </div>
         </div>
@@ -176,18 +197,18 @@
     }
 
     async function download(l, btn) {
-      const d = l.langs[lang];
-      const name = `KAMOD-lesson-${String(l.n).padStart(2, "0")}-${lang}.mp4`;
+      const d = l.langs[lang], m = media(d);
+      const name = `KAMOD-lesson-${String(l.n).padStart(2, "0")}-${lang}-${format}.mp4`;
       const label = btn ? btn.innerHTML : "";
       if (btn) { btn.disabled = true; btn.textContent = T().downloading; }
       try {
-        const blob = await fetch(url(d.video)).then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); });
+        const blob = await fetch(url(m.video)).then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob); a.download = name;
         document.body.appendChild(a); a.click(); a.remove();
         setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       } catch (_e) {
-        window.open(url(d.video), "_blank", "noopener");
+        window.open(url(m.video), "_blank", "noopener");
       } finally {
         if (btn) { btn.disabled = false; btn.innerHTML = label; }
       }
@@ -199,19 +220,21 @@
     function open(n, focusCheck) {
       const i = lessons.findIndex(l => l.n === n);
       const l = lessons[i]; if (!l) return;
-      const t = T(), d = l.langs[lang];
-      if (modal) modal.remove();
+      const t = T(), d = l.langs[lang], m = media(d);
+      if (modal) { modal.querySelector("video")?.pause(); modal.remove(); }
       modal = document.createElement("div");
       modal.className = "kt kt-modal";
       modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", d.title);
       const s = entry(l.n);
       modal.innerHTML = `
-        <div class="kt-dialog" style="position:relative">
-          <div><video controls playsinline preload="metadata" poster="${esc(url(d.poster))}" src="${esc(url(d.video))}"></video></div>
+        <div class="kt-dialog${format === "9x16" ? " is-portrait" : ""}" style="position:relative">
+          <div class="kt-media"><video controls playsinline preload="metadata" poster="${esc(url(m.poster))}" src="${esc(url(m.video))}"></video></div>
           <div class="kt-side">
             <span class="k">${esc(t.lesson)} ${l.n} · ${mmss(d.seconds)}</span>
             <h2>${esc(d.title)}</h2>
             <p>${esc(d.brief)}</p>
+            <div class="kt-seg" role="group" aria-label="${esc(t.videoFormat)}"><span class="cap">${esc(t.videoFormat)}</span>${FORMATS.map(f =>
+              `<button type="button" data-format="${f}" aria-pressed="${format === f}" title="${esc(f === "9x16" ? t.vertical : t.horizontal)}">${f.replace("x", ":")}</button>`).join("")}</div>
             <div>
               <div style="font-weight:700;font-size:14px;margin-bottom:4px">${esc(t.learn)}</div>
               <p style="font-size:12.5px;margin-bottom:10px">${esc(t.tick)}</p>
@@ -220,7 +243,7 @@
             <div class="kt-cheer" ${isDone(l) ? "" : "hidden"}>🎉 ${esc(t.allDone)}</div>
             <a class="kt-btn primary" href="${esc(tryBase + l.try)}" ${tryBase ? 'target="_blank" rel="noopener"' : ""}>${esc(t.tryIt)} →</a>
             <div class="kt-row">
-              <button type="button" class="kt-btn" data-dl="${l.n}">⬇ ${esc(t.download)} <small>${mb(d.bytes)}</small></button>
+              <button type="button" class="kt-btn" data-dl="${l.n}">⬇ ${esc(t.download)} ${format.replace("x", ":")} <small>${mb(m.bytes)}</small></button>
             </div>
             <div class="kt-row">
               ${i > 0 ? `<button type="button" class="kt-btn" data-go="${lessons[i - 1].n}">← ${esc(t.prev)}</button>` : ""}
@@ -236,6 +259,7 @@
       });
       modal.addEventListener("click", e => {
         if (e.target === modal || e.target.closest(".kt-x")) return closeModal();
+        const fm = e.target.closest("[data-format]"); if (fm) { setFormat(fm.dataset.format); return open(n, focusCheck); }
         const go = e.target.closest("[data-go]"); if (go) return open(Number(go.dataset.go));
         const dl = e.target.closest("[data-dl]"); if (dl) return download(l, dl);
       });
@@ -252,15 +276,24 @@
     }
 
     document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+    function setFormat(next) {
+      if (!FORMATS.includes(next)) return;
+      format = next;
+      try { localStorage.setItem(STORE + "_format", format); } catch (_e) {}
+    }
     root.addEventListener("click", e => {
       const f = e.target.closest("[data-filter]"); if (f) { filter = f.dataset.filter; return render(); }
+      const fm = e.target.closest("[data-format]"); if (fm) { setFormat(fm.dataset.format); return render(); }
       const lg = e.target.closest("[data-lang]"); if (lg) { lang = lg.dataset.lang; try { localStorage.setItem(STORE + "_lang", lang); } catch (_e) {} return render(); }
       if (e.target.closest("[data-reset]")) { if (confirm(T().resetQ)) { state = {}; save(state); render(); } return; }
       const dl = e.target.closest("[data-dl]"); if (dl) return download(lessons.find(l => l.n === Number(dl.dataset.dl)), dl);
       const o = e.target.closest("[data-open]"); if (o) return open(Number(o.dataset.open), !!o.dataset.focusCheck);
     });
 
-    try { const saved = localStorage.getItem(STORE + "_lang"); if (!opts.lang && LANGS.includes(saved)) lang = saved; } catch (_e) {}
+    try {
+      const saved = localStorage.getItem(STORE + "_lang"); if (!opts.lang && LANGS.includes(saved)) lang = saved;
+      const savedFormat = localStorage.getItem(STORE + "_format"); if (FORMATS.includes(savedFormat)) format = savedFormat;
+    } catch (_e) {}
     root.innerHTML = `<div class="kt-empty">…</div>`;
     fetch(url("lessons.json"))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
