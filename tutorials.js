@@ -13,29 +13,29 @@
   const LANGS = ["en", "ru", "uz"];
   const FORMATS = ["16x9", "9x16"];
   const UI = {
-    en: { title: "Tutorials", sub: "16 short lessons — watch, try it in KAMOD, then check what you learned.",
+    en: { title: "Tutorials", sub: "{t} short lessons — watch, try it in KAMOD, then check what you learned.",
       done: "{d} of {t} lessons completed", all: "All", todo: "To do", finished: "Completed", lesson: "Lesson",
       watch: "Watch", download: "Download", check: "Check", learn: "Check the lesson — I can…",
       tryIt: "Try it in KAMOD", prev: "Previous", next: "Next lesson", close: "Close", completed: "Completed",
       watched: "Watched", allDone: "Lesson complete — nice work!", tick: "Tick what you can do now.",
       lessonLang: "Lesson language", videoFormat: "Video format", horizontal: "Landscape", vertical: "Vertical",
-      reset: "Reset progress", resetQ: "Reset all lesson progress?",
+      fallback: "Video and lesson text: {lang} (English not available).", reset: "Reset progress", resetQ: "Reset all lesson progress?",
       downloading: "Downloading…", empty: "Nothing here yet.", min: "min", loadErr: "Could not load the lessons. Check your connection and try again." },
-    ru: { title: "Уроки", sub: "16 коротких уроков — смотрите, пробуйте в KAMOD и проверяйте себя.",
+    ru: { title: "Уроки", sub: "Короткие уроки: {t} — смотрите, пробуйте в KAMOD и проверяйте себя.",
       done: "Пройдено уроков: {d} из {t}", all: "Все", todo: "Не пройдены", finished: "Пройдены", lesson: "Урок",
       watch: "Смотреть", download: "Скачать", check: "Проверка", learn: "Проверьте себя — я умею…",
       tryIt: "Попробовать в KAMOD", prev: "Назад", next: "Следующий урок", close: "Закрыть", completed: "Пройден",
       watched: "Просмотрен", allDone: "Урок пройден — отлично!", tick: "Отметьте то, что уже умеете.",
       lessonLang: "Язык урока", videoFormat: "Формат видео", horizontal: "Горизонтально", vertical: "Вертикально",
-      reset: "Сбросить прогресс", resetQ: "Сбросить прогресс всех уроков?",
+      fallback: "Видео и текст урока: {lang}. Перевод на выбранный язык пока недоступен.", reset: "Сбросить прогресс", resetQ: "Сбросить прогресс всех уроков?",
       downloading: "Скачиваем…", empty: "Здесь пока пусто.", min: "мин", loadErr: "Не удалось загрузить уроки. Проверьте интернет и попробуйте снова." },
-    uz: { title: "Darsliklar", sub: "16 ta qisqa dars — tomosha qiling, KAMODda sinab ko‘ring va o‘zingizni tekshiring.",
+    uz: { title: "Darsliklar", sub: "{t} ta qisqa dars — tomosha qiling, KAMODda sinab ko‘ring va o‘zingizni tekshiring.",
       done: "{t} ta darsdan {d} tasi o‘tildi", all: "Barchasi", todo: "O‘tilmagan", finished: "O‘tilgan", lesson: "Dars",
       watch: "Ko‘rish", download: "Yuklab olish", check: "Tekshirish", learn: "O‘zingizni tekshiring — men bilaman…",
       tryIt: "KAMODda sinab ko‘rish", prev: "Oldingi", next: "Keyingi dars", close: "Yopish", completed: "O‘tildi",
       watched: "Ko‘rildi", allDone: "Dars o‘tildi — barakalla!", tick: "Endi qila oladigan narsalarni belgilang.",
       lessonLang: "Dars tili", videoFormat: "Video formati", horizontal: "Gorizontal", vertical: "Vertikal",
-      reset: "Natijani tozalash", resetQ: "Barcha darslar bo‘yicha natija tozalansinmi?",
+      fallback: "Video va dars matni: {lang}. Tanlangan tilda hali mavjud emas.", reset: "Natijani tozalash", resetQ: "Barcha darslar bo‘yicha natija tozalansinmi?",
       downloading: "Yuklanmoqda…", empty: "Hozircha bo‘sh.", min: "daq", loadErr: "Darslarni yuklab bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring." },
   };
 
@@ -130,7 +130,9 @@
     const base = opts.base || "./";
     const tryBase = opts.tryBase || "";
     let lang = LANGS.includes(opts.lang) ? opts.lang : "en";
-    let format = "16x9";
+    const phone = window.matchMedia("(max-width: 767px)");
+    let format = phone.matches ? "9x16" : "16x9";
+    let manualFormat = false;
     let filter = "all";
     let lessons = [];
     let state = load();
@@ -138,12 +140,20 @@
 
     const url = rel => new URL(rel, new URL(base, location.href)).href;
     const T = () => UI[lang];
+    const localized = l => {
+      const selected = [lang, "ru", "uz", "en"].find(k => l.langs && l.langs[k]);
+      return { ...l.langs[selected], language: selected };
+    };
+    const languageNote = d => d.language !== lang
+      ? `<p class="kt-brief kt-language-note">${esc(T().fallback.replace("{lang}", {en:"English",ru:"Русский",uz:"O‘zbekcha"}[d.language]))}</p>` : "";
     const media = d => {
-      const legacy = { video: d.video, poster: d.poster, bytes: d.bytes };
-      return (d.formats && d.formats[format]) || legacy;
+      if (d.formats && d.formats[format]) return { ...d.formats[format], format };
+      if (d.video) return { video: d.video, poster: d.poster, bytes: d.bytes, format: "16x9" };
+      const available = FORMATS.find(f => d.formats && d.formats[f]);
+      return { ...d.formats[available], format: available };
     };
     const entry = n => (state[n] = state[n] || { watched: false, checks: [] });
-    const isDone = l => { const s = state[l.n]; const need = l.langs[lang].learn.length; return !!s && s.checks.filter(Boolean).length >= need; };
+    const isDone = l => { const s = state[l.n]; const need = localized(l).learn.length; return !!s && s.checks.filter(Boolean).length >= need; };
 
     function render() {
       const t = T();
@@ -151,7 +161,7 @@
       const list = lessons.filter(l => filter === "all" || (filter === "done" ? isDone(l) : !isDone(l)));
       root.innerHTML = `
         <div class="kt-head">
-          <div><h1 class="kt-h1"><b>${esc(t.title)}</b></h1><p class="kt-sub">${esc(t.sub)}</p></div>
+          <div><h1 class="kt-h1"><b>${esc(t.title)}</b></h1><p class="kt-sub">${esc(t.sub.replace("{t}", lessons.length))}</p></div>
           <div class="kt-progress" aria-live="polite">
             <div class="lbl"><span>${esc(t.done.replace("{d}", done).replace("{t}", lessons.length))}</span>
               ${done ? `<button type="button" class="kt-reset" data-reset>${esc(t.reset)}</button>` : ""}</div>
@@ -172,24 +182,24 @@
     }
 
     function card(l) {
-      const t = T(), d = l.langs[lang], m = media(d), s = state[l.n] || { checks: [] };
+      const t = T(), d = localized(l), m = media(d), s = state[l.n] || { checks: [] };
       const ticked = s.checks.filter(Boolean).length;
       return `<article class="kt-card${isDone(l) ? " is-done" : ""}" data-n="${l.n}">
-        <button type="button" class="kt-thumb${format === "9x16" ? " is-portrait" : ""}" data-open="${l.n}" aria-label="${esc(t.watch + ": " + d.title)}">
+        <button type="button" class="kt-thumb${m.format === "9x16" ? " is-portrait" : ""}" data-open="${l.n}" aria-label="${esc(t.watch + ": " + d.title)}">
           <img src="${esc(url(m.poster))}" alt="" loading="lazy">
           <span class="kt-play"><span>${PLAY}</span></span>
           <span class="kt-badge n">${esc(t.lesson)} ${l.n}</span>
           <span class="kt-badge t">${mmss(d.seconds)}</span>
-          <span class="kt-badge f">${format.replace("x", ":")}</span>
+          <span class="kt-badge f">${m.format.replace("x", ":")}</span>
           ${isDone(l) ? `<span class="kt-badge ok">✓ ${esc(t.completed)}</span>` : s.watched ? `<span class="kt-badge ok" style="background:rgba(10,10,15,.78);border-color:rgba(255,255,255,.2);color:#fff">👁 ${esc(t.watched)}</span>` : ""}
         </button>
         <div class="kt-body">
           <h3 class="kt-title">${esc(d.title)}</h3>
-          <p class="kt-brief">${esc(d.brief)}</p>
+          <p class="kt-brief">${esc(d.brief)}</p>${languageNote(d)}
           <div class="kt-meter" title="${ticked}/${d.learn.length}">${d.learn.map((_, i) => `<i class="${s.checks[i] ? "on" : ""}"></i>`).join("")}</div>
           <div class="kt-actions">
             <button type="button" class="kt-btn primary" data-open="${l.n}">▶ ${esc(t.watch)}</button>
-            <button type="button" class="kt-btn slim" data-dl="${l.n}" title="${esc(t.download)} ${format.replace("x", ":")} · ${mb(m.bytes)}" aria-label="${esc(t.download)} ${format.replace("x", ":")} · ${mb(m.bytes)}">⬇ <small>${mb(m.bytes)}</small></button>
+            <button type="button" class="kt-btn slim" data-dl="${l.n}" title="${esc(t.download)} ${m.format.replace("x", ":")} · ${mb(m.bytes)}" aria-label="${esc(t.download)} ${m.format.replace("x", ":")} · ${mb(m.bytes)}">⬇ <small>${mb(m.bytes)}</small></button>
             <button type="button" class="kt-btn slim" data-open="${l.n}" data-focus-check="1" title="${esc(t.check)}" aria-label="${esc(t.check)} ${ticked}/${d.learn.length}">✓ ${ticked}/${d.learn.length}</button>
           </div>
         </div>
@@ -197,8 +207,8 @@
     }
 
     async function download(l, btn) {
-      const d = l.langs[lang], m = media(d);
-      const name = `KAMOD-lesson-${String(l.n).padStart(2, "0")}-${lang}-${format}.mp4`;
+      const d = localized(l), m = media(d);
+      const name = `KAMOD-lesson-${String(l.n).padStart(2, "0")}-${d.language}-${m.format}.mp4`;
       const label = btn ? btn.innerHTML : "";
       if (btn) { btn.disabled = true; btn.textContent = T().downloading; }
       try {
@@ -215,24 +225,24 @@
     }
 
     let modal = null;
-    function closeModal() { if (!modal) return; modal.querySelector("video")?.pause(); modal.remove(); modal = null; render(); }
+    function closeModal() { if (!modal) return; modal.querySelector("video")?.pause(); modal.remove(); modal = null; if (!manualFormat) format = phone.matches ? "9x16" : "16x9"; render(); }
 
     function open(n, focusCheck) {
       const i = lessons.findIndex(l => l.n === n);
       const l = lessons[i]; if (!l) return;
-      const t = T(), d = l.langs[lang], m = media(d);
+      const t = T(), d = localized(l), m = media(d);
       if (modal) { modal.querySelector("video")?.pause(); modal.remove(); }
       modal = document.createElement("div");
       modal.className = "kt kt-modal";
       modal.setAttribute("role", "dialog"); modal.setAttribute("aria-modal", "true"); modal.setAttribute("aria-label", d.title);
       const s = entry(l.n);
       modal.innerHTML = `
-        <div class="kt-dialog${format === "9x16" ? " is-portrait" : ""}" style="position:relative">
+        <div class="kt-dialog${m.format === "9x16" ? " is-portrait" : ""}" style="position:relative">
           <div class="kt-media"><video controls playsinline preload="metadata" poster="${esc(url(m.poster))}" src="${esc(url(m.video))}"></video></div>
           <div class="kt-side">
             <span class="k">${esc(t.lesson)} ${l.n} · ${mmss(d.seconds)}</span>
             <h2>${esc(d.title)}</h2>
-            <p>${esc(d.brief)}</p>
+            <p>${esc(d.brief)}</p>${languageNote(d)}
             <div class="kt-seg" role="group" aria-label="${esc(t.videoFormat)}"><span class="cap">${esc(t.videoFormat)}</span>${FORMATS.map(f =>
               `<button type="button" data-format="${f}" aria-pressed="${format === f}" title="${esc(f === "9x16" ? t.vertical : t.horizontal)}">${f.replace("x", ":")}</button>`).join("")}</div>
             <div>
@@ -243,7 +253,7 @@
             <div class="kt-cheer" ${isDone(l) ? "" : "hidden"}>🎉 ${esc(t.allDone)}</div>
             <a class="kt-btn primary" href="${esc(tryBase + l.try)}" ${tryBase ? 'target="_blank" rel="noopener"' : ""}>${esc(t.tryIt)} →</a>
             <div class="kt-row">
-              <button type="button" class="kt-btn" data-dl="${l.n}">⬇ ${esc(t.download)} ${format.replace("x", ":")} <small>${mb(m.bytes)}</small></button>
+              <button type="button" class="kt-btn" data-dl="${l.n}">⬇ ${esc(t.download)} ${m.format.replace("x", ":")} <small>${mb(m.bytes)}</small></button>
             </div>
             <div class="kt-row">
               ${i > 0 ? `<button type="button" class="kt-btn" data-go="${lessons[i - 1].n}">← ${esc(t.prev)}</button>` : ""}
@@ -279,6 +289,7 @@
     function setFormat(next) {
       if (!FORMATS.includes(next)) return;
       format = next;
+      manualFormat = true;
       try { localStorage.setItem(STORE + "_format", format); } catch (_e) {}
     }
     root.addEventListener("click", e => {
@@ -292,8 +303,21 @@
 
     try {
       const saved = localStorage.getItem(STORE + "_lang"); if (!opts.lang && LANGS.includes(saved)) lang = saved;
-      const savedFormat = localStorage.getItem(STORE + "_format"); if (FORMATS.includes(savedFormat)) format = savedFormat;
+      const savedFormat = localStorage.getItem(STORE + "_format"); if (FORMATS.includes(savedFormat)) { format = savedFormat; manualFormat = true; }
     } catch (_e) {}
+    phone.addEventListener("change", () => {
+      if (manualFormat || modal) return;
+      format = phone.matches ? "9x16" : "16x9";
+      // Do not interrupt a lesson already playing when the device rotates.
+      if (!modal) render();
+    });
+    document.addEventListener("kamod:languagechange", e => {
+      const next = e.detail && e.detail.lang;
+      if (!LANGS.includes(next) || next === lang) return;
+      lang = next;
+      closeModal();
+      render();
+    });
     root.innerHTML = `<div class="kt-empty">…</div>`;
     fetch(url("lessons.json"))
       .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
