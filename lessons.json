@@ -1363,17 +1363,17 @@
           "seconds": 60,
           "video": "new-lessons/ru/lesson-17-16x9.mp4",
           "poster": "new-lessons/ru/lesson-17-16x9.jpg",
-          "bytes": 23856570,
+          "bytes": 5281306,
           "formats": {
             "16x9": {
               "video": "new-lessons/ru/lesson-17-16x9.mp4",
               "poster": "new-lessons/ru/lesson-17-16x9.jpg",
-              "bytes": 23856570
+              "bytes": 5281306
             },
             "9x16": {
               "video": "new-lessons/ru/lesson-17-9x16.mp4",
               "poster": "new-lessons/ru/lesson-17-9x16.jpg",
-              "bytes": 23944913
+              "bytes": 5826395
             }
           }
         },
@@ -1388,17 +1388,17 @@
           "seconds": 60,
           "video": "new-lessons/uz/lesson-17-16x9.mp4",
           "poster": "new-lessons/uz/lesson-17-16x9.jpg",
-          "bytes": 23604228,
+          "bytes": 5214786,
           "formats": {
             "16x9": {
               "video": "new-lessons/uz/lesson-17-16x9.mp4",
               "poster": "new-lessons/uz/lesson-17-16x9.jpg",
-              "bytes": 23604228
+              "bytes": 5214786
             },
             "9x16": {
               "video": "new-lessons/uz/lesson-17-9x16.mp4",
               "poster": "new-lessons/uz/lesson-17-9x16.jpg",
-              "bytes": 23945340
+              "bytes": 5829044
             }
           }
         }
@@ -1419,17 +1419,17 @@
           "seconds": 60,
           "video": "new-lessons/ru/lesson-18-16x9.mp4",
           "poster": "new-lessons/ru/lesson-18-16x9.jpg",
-          "bytes": 25336198,
+          "bytes": 4991670,
           "formats": {
             "16x9": {
               "video": "new-lessons/ru/lesson-18-16x9.mp4",
               "poster": "new-lessons/ru/lesson-18-16x9.jpg",
-              "bytes": 25336198
+              "bytes": 4991670
             },
             "9x16": {
               "video": "new-lessons/ru/lesson-18-9x16.mp4",
               "poster": "new-lessons/ru/lesson-18-9x16.jpg",
-              "bytes": 22375449
+              "bytes": 4116990
             }
           }
         },
@@ -1444,17 +1444,17 @@
           "seconds": 60,
           "video": "new-lessons/uz/lesson-18-16x9.mp4",
           "poster": "new-lessons/uz/lesson-18-16x9.jpg",
-          "bytes": 25290898,
+          "bytes": 5029909,
           "formats": {
             "16x9": {
               "video": "new-lessons/uz/lesson-18-16x9.mp4",
               "poster": "new-lessons/uz/lesson-18-16x9.jpg",
-              "bytes": 25290898
+              "bytes": 5029909
             },
             "9x16": {
               "video": "new-lessons/uz/lesson-18-9x16.mp4",
               "poster": "new-lessons/uz/lesson-18-9x16.jpg",
-              "bytes": 22344038
+              "bytes": 4118633
             }
           }
         }
@@ -1475,17 +1475,17 @@
           "seconds": 60,
           "video": "new-lessons/ru/lesson-19-16x9.mp4",
           "poster": "new-lessons/ru/lesson-19-16x9.jpg",
-          "bytes": 27010812,
+          "bytes": 5587310,
           "formats": {
             "16x9": {
               "video": "new-lessons/ru/lesson-19-16x9.mp4",
               "poster": "new-lessons/ru/lesson-19-16x9.jpg",
-              "bytes": 27010812
+              "bytes": 5587310
             },
             "9x16": {
               "video": "new-lessons/ru/lesson-19-9x16.mp4",
               "poster": "new-lessons/ru/lesson-19-9x16.jpg",
-              "bytes": 23449479
+              "bytes": 4579376
             }
           }
         },
@@ -1500,19 +1500,77 @@
           "seconds": 60,
           "video": "new-lessons/uz/lesson-19-16x9.mp4",
           "poster": "new-lessons/uz/lesson-19-16x9.jpg",
-          "bytes": 26962797,
+          "bytes": 5596439,
           "formats": {
             "16x9": {
               "video": "new-lessons/uz/lesson-19-16x9.mp4",
               "poster": "new-lessons/uz/lesson-19-16x9.jpg",
-              "bytes": 26962797
+              "bytes": 5596439
             },
             "9x16": {
               "video": "new-lessons/uz/lesson-19-9x16.mp4",
               "poster": "new-lessons/uz/lesson-19-9x16.jpg",
-              "bytes": 23439020
+              "bytes": 4570575
             }
           }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "try": "/ai-videos",
+      "langs": {
+        "ru": {
+          "title": "Omni Flash 1.2: от текста и портрета к видео",
+          "brief": "Создайте сцену кофейни, придумайте героиню и оживите её портрет. Русские промпты показаны в переводе; результаты — из исходного теста на узбекском.",
+          "learn": [
+            "Создать видео по описанию",
+            "Подготовить портрет в AI Инфлюенсере и AI Изображениях",
+            "Загрузить портрет в Omni и задать движение",
+            "Открыть и скачать готовое видео"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/ru/lesson-20-16x9.mp4",
+              "poster": "new-lessons/ru/lesson-20-16x9.jpg",
+              "bytes": 4011912
+            },
+            "9x16": {
+              "video": "new-lessons/ru/lesson-20-9x16.mp4",
+              "poster": "new-lessons/ru/lesson-20-9x16.jpg",
+              "bytes": 3416221
+            }
+          },
+          "video": "new-lessons/ru/lesson-20-16x9.mp4",
+          "poster": "new-lessons/ru/lesson-20-16x9.jpg",
+          "bytes": 4011912
+        },
+        "uz": {
+          "title": "Omni Flash 1.2: matn va portretdan video",
+          "brief": "Qahvaxona sahnasini yarating, qahramon o‘ylab toping va uning portretini jonlantiring.",
+          "learn": [
+            "Tavsifdan video yaratish",
+            "AI Influencer va AI Rasmlarda portret tayyorlash",
+            "Omni’ga portret yuklab, harakatni yozish",
+            "Tayyor videoni ochish va yuklab olish"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/uz/lesson-20-16x9.mp4",
+              "poster": "new-lessons/uz/lesson-20-16x9.jpg",
+              "bytes": 4031359
+            },
+            "9x16": {
+              "video": "new-lessons/uz/lesson-20-9x16.mp4",
+              "poster": "new-lessons/uz/lesson-20-9x16.jpg",
+              "bytes": 3384983
+            }
+          },
+          "video": "new-lessons/uz/lesson-20-16x9.mp4",
+          "poster": "new-lessons/uz/lesson-20-16x9.jpg",
+          "bytes": 4031359
         }
       }
     }

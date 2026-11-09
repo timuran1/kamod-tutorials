@@ -1,8 +1,12 @@
 # KAMOD Tutorials
 
-16 short video lessons for [KAMOD](https://kamod.io) in English, Russian and Uzbek.
+20 short video lessons for [KAMOD](https://kamod.io).
 Watch, download and check yourself: https://timuran1.github.io/kamod-tutorials/
 
-Every lesson includes a 16:9 master and a branded 9:16 social edition.
+Lessons 1–16 are available in English, Russian and Uzbek. Lessons 17–20 are available in Russian and Uzbek.
+Every lesson includes a 16:9 desktop edition and a 9:16 mobile edition.
 
-Videos: `en/`, `ru/`, `uz/` · lesson list: `lessons.json` · portrait builder: `build_portraits.py`.
+New lessons cover Video Remix, Omni Edit character replacement, rain and lightning effects, and Omni Flash 1.2 text/image-to-video.
+Videos use web-optimized H.264/AAC with faststart. Original masters are retained separately.
+
+Videos: `en/`, `ru/`, `uz/`, `new-lessons/` · lesson list: `lessons.json` · portrait builder: `build_portraits.py`.
