@@ -1573,6 +1573,64 @@
           "bytes": 4031359
         }
       }
+    },
+    {
+      "n": 21,
+      "try": "/ai-influencer",
+      "langs": {
+        "ru": {
+          "title": "AI Инфлюенсер: создайте своего персонажа",
+          "brief": "От описания Лайло до готового портрета и полного роста: настоящий процесс в KAMOD с Seedream 5 Pro.",
+          "learn": [
+            "Сохранить имя, стиль и описание персонажа",
+            "Подготовить промпт для листа персонажа",
+            "Проверить модель, формат и стоимость",
+            "Открыть и сохранить готовое изображение"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/ru/lesson-21-16x9.mp4",
+              "poster": "new-lessons/ru/lesson-21-16x9.jpg",
+              "bytes": 2637561
+            },
+            "9x16": {
+              "video": "new-lessons/ru/lesson-21-9x16.mp4",
+              "poster": "new-lessons/ru/lesson-21-9x16.jpg",
+              "bytes": 2945082
+            }
+          },
+          "video": "new-lessons/ru/lesson-21-16x9.mp4",
+          "poster": "new-lessons/ru/lesson-21-16x9.jpg",
+          "bytes": 2637561
+        },
+        "uz": {
+          "title": "AI Influenser: o‘z qahramoningizni yarating",
+          "brief": "Laylo tavsifidan tayyor portret va to‘liq gavda tasvirigacha: KAMOD va Seedream 5 Pro bilan amaliy dars.",
+          "learn": [
+            "Qahramon ismi, uslubi va tavsifini saqlash",
+            "Qahramon varag‘i uchun prompt tayyorlash",
+            "Model, format va narxni tekshirish",
+            "Tayyor rasmni ochish va saqlash"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/uz/lesson-21-16x9.mp4",
+              "poster": "new-lessons/uz/lesson-21-16x9.jpg",
+              "bytes": 2578683
+            },
+            "9x16": {
+              "video": "new-lessons/uz/lesson-21-9x16.mp4",
+              "poster": "new-lessons/uz/lesson-21-9x16.jpg",
+              "bytes": 2878961
+            }
+          },
+          "video": "new-lessons/uz/lesson-21-16x9.mp4",
+          "poster": "new-lessons/uz/lesson-21-16x9.jpg",
+          "bytes": 2578683
+        }
+      }
     }
   ]
 }
