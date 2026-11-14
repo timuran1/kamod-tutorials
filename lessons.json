@@ -1631,6 +1631,64 @@
           "bytes": 2578683
         }
       }
+    },
+    {
+      "n": 22,
+      "try": "/ai-short-drama",
+      "langs": {
+        "ru": {
+          "title": "AI Short Drama: от идеи до серии",
+          "brief": "Сначала — готовая сцена с русским диалогом. Затем — обзор нового рабочего пространства: персонажи, план и замена одного кадра. Интерфейс показан в предварительной версии.",
+          "learn": [
+            "Сохранить персонажа и добавить фото",
+            "Выбрать язык диалога и модель",
+            "Проверить и изменить план кадров",
+            "Заменить один кадр и проверить цену"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/ru/lesson-22-16x9-20261115.mp4",
+              "poster": "new-lessons/ru/lesson-22-16x9-20261115.jpg",
+              "bytes": 8389650
+            },
+            "9x16": {
+              "video": "new-lessons/ru/lesson-22-9x16-20261115.mp4",
+              "poster": "new-lessons/ru/lesson-22-9x16-20261115.jpg",
+              "bytes": 4502794
+            }
+          },
+          "video": "new-lessons/ru/lesson-22-16x9-20261115.mp4",
+          "poster": "new-lessons/ru/lesson-22-16x9-20261115.jpg",
+          "bytes": 8389650
+        },
+        "uz": {
+          "title": "AI Short Drama: g‘oyadan tayyor qismgacha",
+          "brief": "Avval o‘zbekcha dialogli tayyor sahna. Keyin yangi ish maydoni: qahramonlar, kadrlar rejasi va bitta kadrni almashtirish. Interfeys oldindan ko‘rish versiyasida ko‘rsatilgan.",
+          "learn": [
+            "Qahramonni saqlash va rasmini qo‘shish",
+            "Dialog tili va modelni tanlash",
+            "Kadrlar rejasini tekshirish va tahrirlash",
+            "Bitta kadrni almashtirish va narxni tekshirish"
+          ],
+          "seconds": 60,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/uz/lesson-22-16x9-20261115.mp4",
+              "poster": "new-lessons/uz/lesson-22-16x9-20261115.jpg",
+              "bytes": 8601482
+            },
+            "9x16": {
+              "video": "new-lessons/uz/lesson-22-9x16-20261115.mp4",
+              "poster": "new-lessons/uz/lesson-22-9x16-20261115.jpg",
+              "bytes": 4634651
+            }
+          },
+          "video": "new-lessons/uz/lesson-22-16x9-20261115.mp4",
+          "poster": "new-lessons/uz/lesson-22-16x9-20261115.jpg",
+          "bytes": 8601482
+        }
+      }
     }
   ]
 }
