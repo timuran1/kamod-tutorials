@@ -1689,6 +1689,64 @@
           "bytes": 8601482
         }
       }
+    },
+    {
+      "n": 23,
+      "try": "/film-studio",
+      "langs": {
+        "uz": {
+          "title": "AI Kino Studiya: suratdan videoga",
+          "brief": "Tayyor lavhani tomosha qiling. Keyin surat yuklash, kamera harakatini tanlash va videoni tarixdan yuklab olishni o‘rganing.",
+          "learn": [
+            "Referens suratni yuklash va sahnani tasvirlash",
+            "Kamera harakatini tanlash",
+            "Narxni tekshirish va yaratish jarayonini kuzatish",
+            "Tayyor videoni tarixdan yuklab olish"
+          ],
+          "seconds": 40,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/uz/lesson-23-16x9.mp4",
+              "poster": "new-lessons/uz/lesson-23-16x9.jpg",
+              "bytes": 5309011
+            },
+            "9x16": {
+              "video": "new-lessons/uz/lesson-23-9x16.mp4",
+              "poster": "new-lessons/uz/lesson-23-9x16.jpg",
+              "bytes": 6220879
+            }
+          },
+          "video": "new-lessons/uz/lesson-23-16x9.mp4",
+          "poster": "new-lessons/uz/lesson-23-16x9.jpg",
+          "bytes": 5309011
+        },
+        "ru": {
+          "title": "AI Киностудия: от фотографии до видео",
+          "brief": "Посмотрите готовый ролик, а затем повторите шаги в Киностудии: добавьте фото, опишите сцену и задайте движение камеры.",
+          "learn": [
+            "Загрузить фото и описать сцену",
+            "Выбрать движение камеры",
+            "Проверить цену и следить за генерацией после обновления страницы",
+            "Найти ролик в истории и скачать его"
+          ],
+          "seconds": 40,
+          "formats": {
+            "16x9": {
+              "video": "new-lessons/ru/lesson-23-16x9.mp4",
+              "poster": "new-lessons/ru/lesson-23-16x9.jpg",
+              "bytes": 5423356
+            },
+            "9x16": {
+              "video": "new-lessons/ru/lesson-23-9x16.mp4",
+              "poster": "new-lessons/ru/lesson-23-9x16.jpg",
+              "bytes": 6463614
+            }
+          },
+          "video": "new-lessons/ru/lesson-23-16x9.mp4",
+          "poster": "new-lessons/ru/lesson-23-16x9.jpg",
+          "bytes": 5423356
+        }
+      }
     }
   ]
 }
